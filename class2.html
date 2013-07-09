@@ -42,22 +42,19 @@
           <h3>Beginning HTML and CSS</h3>
           <h4>Class 2</h4>
         </section>
-        
-        <!-- Welcome-->
+
         <section>
           <h3>Welcome!</h3>
           <div class = "left-align">
-          <p>Girl Develop It is here to provide affordable and accessible programs to learn software through mentorship and hands-on instruction.</p>
-          <p class ="green">Some "rules"</p>
+          <p class = "blue">Tell us about yourself.</p>
           <ul>
-            <li>We are here for you!</li>
-            <li>Every question is important</li>
-            <li>Help each other</li>
-            <li>Have fun</li>
+            <li>Who are you?</li>
+            <li>What do you hope to get out of the class?</li>
+            <li>What is your favorite dinosaur?</li>
+            <img src="images/dinosaur.jpeg" />
           </ul>
           </div>
-        </section>
-        
+        </section>        
         <!-- Role of HTML v. CSS-->
         <section>
           <h3>CSS</h3>
@@ -67,7 +64,16 @@
           <div class = "blue">= Your Website<br /><br /></div>
           <p class = "fragment">With CSS you specify colors, position, fonts, borders, spacing and many many other effects.</p>
         </section>
-
+          <section>
+        	<h3>What we'll learn today</h3>
+ <ul>
+ <li class="fragment">A little CSS history</li>
+ <li class="fragment">Terminology and syntax</li>
+ <li class="fragment">Selectors</li>
+ <li class="fragment">Defining Colors and Fonts</li>
+ <li class="fragment">How to attach CSS to your web page</li>
+ </ul>
+        </section>      
         <!-- What is CSS-->
         <section>
           <h3>History of CSS</h3>
@@ -142,21 +148,38 @@
 			<li>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/title&gt;</li>	
 			<li>&nbsp;&nbsp;&nbsp;&nbsp;&lt;style&gt;</li>	
 			<li class = "fragment">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;h1 &#123;</li>
-			<li class = "fragment">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: blue;</li>
-			<li class = "fragment">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background-color: yellow;</li>
+			<li class = "fragment">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: blue;</li>
+			<li class = "fragment">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background-color: yellow;</li>
 			<li class = "fragment">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#125;</li>
 			<li>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/style&gt;</li>		
 			<li>&lt;/head&gt;</li>
 		</ul>
         </section>		
-        
+         <section>
+          <h3>Now save your page</h3>
+         <p class="fragment">Open it up in a browser</p>
+          <p class="fragment">Does your heading look different?</p>				 
+        </section>       
         <!-- The CSS Rule-->
         <section>
-        	<h3>The CSS Rule</h3>
+        	<h3>CSS terminology:</h3>
+					<p>CSS is composed of style "rules"</p>
+					<p>Here is a style rule:</p>
         	<img src="images/cssrule.png" alt="The CSS Rule" style="border: none; box-shadow: none;"/>
-			<ul>
+       </section>		
+         <section>
+					<h3>Stynax is important!</h3>
+			<ul class="no_bullets">
+			<li>h1 &#123;</li>
+			<li>&nbsp;&nbsp;color: blue;</li>
+			<li>&nbsp;&nbsp;background-color: yellow;</li>
+			<li>&#125;<br /><br /></li>
+</ul>
+<ul>
+			<li class="fragment">There are no limits to the number of declarations in a style rule.</li>				
 			<li class="fragment">Common convention is to use lower case throughout.</li>			
 			<li class="fragment">Don't forget the semicolon at the end of the declarations!</li>
+			<li class="fragment">Don't forget the closing curly bracket!</li>			
 			</ul>
         </section>
         
@@ -164,272 +187,380 @@
 
         <!-- Selectors elements-->
         <section>
-			  <h3>Using HTML Tag as Element</h3>
-<pre><code class = "html">
-p {
-  property: value;
-}
-</code></pre>
-      <p>Selects all paragraph elements.</p>
-<pre><code class = "html">
-img {
-  property: value;
-}
-</code></pre>
-        <p>Selects all image elements.</p>
+			  <h3>What can we use as selectors?</h3>
+				<ul>
+				<li class="fragment">HTML tags</li>
+				<li class="fragment">Classes and ids</li>
+				<li class="fragment">Pseudo classes</li>
+				<li class="fragment">Any combination of the above!</li>
+				</ul>
+				</section>
+				<section>
+				<h3>HTML tags:</h3>
+				<ul class="fragment no_bullets">
+			<li>p &#123;</li>
+			<li>&nbsp;&nbsp;property: value;</li>
+			<li>&#125;<br /><br /></li>
+			</ul>
+      <p class="fragment yellow">This would select every paragraph element.</p>
+				<ul class="fragment no_bullets">
+			<li>img &#123;</li>
+			<li>&nbsp;&nbsp;property: value;</li>
+			<li>&#125;<br /><br /></li>
+			</ul>
+        <p class="fragment yellow">This would select every image element.</p>
+				<p class="fragment yellow">...but what if you need more control?</p>						
         </section>
-        <section>
-			  <h3>Using HTML Tag as Element</h3>
-<pre><code class = "html">
-h1 {
-  property: value;
-}
-</code></pre>
-      <p>Selects all top-level heading elements.</p>
-<pre><code class = "html">
-li {
-  property: value;
-}
-</code></pre>
-        <p>Selects all list item elements in all lists.</p>
-<p class="fragment">...and so on...</p>   
-        </section>		
      
         <!-- Selectors ID-->
         <section>
-<p>...but what if you need more control?</p>		
-			    <h3 class="fragment">Classes and IDs</h3>
-			<ul>
-			<li class="fragment">"Class" and "ID" are HTML <em>attributes</em></li>
-			<li class="fragment">Attributes "describe" the element (provide additional information).
-			<li class="fragment">Attributes are followed by <em class="yellow">values</em>.<br />
-				<ul class="blue"><li class="fragment"><em>think ~ person: hair = "brown"</em></li>
-				<li class="fragment">&lt;p class="intro"&gt;</li>
-				</ul></li>
+
+			    <h3>Classes and IDs</h3>
+			<ul class="no_bullets">
+			<li class="fragment">"Class" and "ID" are HTML <em class="yellow">attributes.</em></li>
+			<li class="fragment">Attributes "describe" elements and are followed by <em class="yellow">values</em>.</li>
+			<li class="fragment">In your HTML, it looks like this:</li>
+				<li class="fragment blue">&lt;p id="intro"&gt;</li>	
+				<li class="fragment blue">&lt;span class="warning"&gt;</li>				
+			</ul>
+			</section>
+			<section>
+			    <h3>Classes</h3>			
+			<ul class="fragment no_bullets">
+				<li>&lt;p class="warning"&gt;<br /><br /></li>										
+						<li class= "blue">.warning &#123;</li>
+			<li class= "blue">&nbsp;&nbsp;property: value;</li>
+			<li class= "blue">&#125;<br /><br /></li>
+			<li class="fragment">A class name is preceeded by a period in your style rule.</li>
 			</ul>
 </section>
-<section>
-			    <h3>Syntax for Classes and IDs</h3>
-<ul>
-<li>Can use letters, numbers, underscore or dash (but cannot start with a number or dash followed by number).<br /><br /></li>
-<li>No spaces &mdash; use a hyphen or underscore<br /><br /></li>
-<li>The convention is to use all lowercase letters (although CSS is technically case-insensitive).<br /><br /></li>
-<li>Class and ID names must be in quotes (just like all other attribute values).<br /><br /></li>
-<li>In your style rule, classes are preceeded by a "." and ids are preceeded by a "#".</li>
-</ul>
+			<section>
+			    <h3>Ids</h3>			
+			<ul class="fragment no_bullets">
+				<li>&lt;p id="intro"&gt;<br /><br /></li>							
+						<li class= "blue">#intro &#123;</li>
+			<li class= "blue">&nbsp;&nbsp;property: value;</li>
+			<li class= "blue">&#125;<br /><br /></li>
+			<li class="fragment">An id name is preceeded by a pound sign in your style rule.</li>
+			</ul>
 </section>
-<section>
-<h3>Example: Select all elements with an id of "footer"</h3>
-       <p>This is how your HTML looks...</p> 	   
-<pre><code class = "html">
-&lt;p id="footer">Copyright 2011&lt;/p>
-</code></pre>
-         <p>And this is how your CSS style looks...</p>
-<pre><code class = "html">
-#footer {
-  property: value;
-}
-</code></pre>
-			  </section>
- <section>
-<h3>Example: Select all elements with a class of "warning"</h3>
-       <p>This is how your HTML looks...</p> 	   
-<pre><code class = "html">
-&lt;p class="warning">Run away!&lt;/p>
-</code></pre>
-         <p>And this is how your CSS style looks...</p>
-<pre><code class = "html">
-.warning {
-  color: red;
-}
-</code></pre>
-			  </section>       
-        
         <!-- ID vs Class-->
         <section>
         <h3>IDs vs. Classes</h3>
-        <div class = "left-align">
-          <span class = "yellow">ID</span> -- Should only apply to one element on a webpage. I.E. A webpage only has one footer.
-          <p>The "#" is how you tell CSS "this is an id."</p>
-        </div>
-        <div class = "left-align">
-          <span class = "yellow">Class</span> -- Lots of elements can have the same class. I.E. There can be many warning on one webpage.
-          <p>The "." is how you tell CSS "this is a class name."</p>
-        </div>
+        <p class = "left-align fragment">
+          <span class = "yellow">ID:</span>  An id can only be used once <em class="yellow">on a page</em>. Refers to a singular page element (like a footer).<br /><br /></p>
+          <p class="fragment blue"><em>Think ~ A student ID number</em><br /><br /></p>
+        <p class = "left-align fragment">
+          <span class = "yellow">Class:</span>  Lots of elements can have the same class. I.E. There can be many spans with a class of "warning".<br /><br /></p>
+          <p class="fragment blue"><em>Think ~ A student as a member of a class</em><br /><br /></p>
       </section>  
-      
+<section>
+			    <h3>Naming your Class or Id:</h3>
+<ul>
+<li class="fragment">Can use letters, numbers, underscore or dash (but don't start with a number or a dash followed by number).<br /><br /></li>
+<li class="fragment">No spaces &mdash; use a hyphen or underscore<br /><br /></li>
+<li class="fragment">CSS is case-insensitive, but the convention is to use all lowercase letters.<br /><br /></li>
+<li class="fragment">In your HTML, class and id names are in quotes (just like all other attribute values).<br /><br /></li>
+</ul>
+</section>
+<section>
+          <h3>Let's code it!</h3>
+		<ul class="no_bullets">
+			<li>Add these rules inside your style tags<br /><br /></li>	
+			<li class="blue">&nbsp;&nbsp;&nbsp;#intro &#123;</li>
+			<li class="blue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: blue;</li>
+			<li class="blue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#125;<br /><br /></li>
+			<li class="yellow">&nbsp;&nbsp;&nbsp;.warning &#123;</li>
+			<li class="yellow">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: red;</li>
+			<li class="yellow">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#125;<br /><br /></li>			
+		</ul>	
+<p class="fragment left-align">Add an id of "intro" to your first paragraph<br /><br /></p>
+<p class="fragment left-align">Add two spans with a class of "warning"<br /><br /></p>				
+			  </section>
+			<section>
+			    <h3>Pseudo Classes</h3>
+			<p>Describes a "current condition" of an HTML element, rather than an "attribute"</p>
+			<p><em class="yellow">Link</em> pseudo classes are the most common</p>
+			</section>
+			<section>
+			    <h3>Link Pseudo Classes</h3>			
+			<ul class="no_bullets">
+<li class="fragment blue">a:link <em style="color: white">~unvisited link</em></li>
+<li class="fragment blue">a:visited <em style="color: white">~visited link</em></li>
+<li class="fragment blue">a:hover <em style="color: white">~mouse over link</em></li>
+<li class="fragment blue">a:active <em style="color: white">~selected link</em><br /><br /></li>
+</ul>
+<ul>
+<li class="fragment left-align">If present, a:hover <em>must</em> come after a:link and a:visited.</li>
+
+<li class="fragment left-align">If present, a:active <em>must</em> come after a:hover.</li>
+</ul>
+</section> 
+<section>
+          <h3>Let's spice up our links!</h3>
+		<ul class="no_bullets">
+			<li class="blue">&nbsp;&nbsp;&nbsp;a:link &#123;</li>
+			<li class="blue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: blue;</li>
+			<li class="blue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#125;</li>
+			<li class="yellow">&nbsp;&nbsp;&nbsp;a:visited &#123;</li>
+			<li class="yellow">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: yellow;</li>
+			<li class="yellow">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#125;</li>
+			<li class="green">&nbsp;&nbsp;&nbsp;a:hover &#123;</li>
+			<li class="green">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: green;</li>
+			<li class="green">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#125;</li>			
+			<li>&nbsp;&nbsp;&nbsp;a:active &#123;</li>
+			<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: white;</li>
+			<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#125;</li>						
+		</ul>	
+</section>		
         <!-- Selector position-->
         <section>
-        <h3>...Let's be <em>more</em> specific!</h3>
-<pre><code class = "html">
-p em {
-  color: yellow;
-}
-</code></pre>
-       <p>Selects all em elements that are within a paragraph</p>
-<pre><code class = "html">
-&lt;p>This is &lt;em>important.&lt;/em>&lt;/p>
-</code></pre>
-        <p>The associated HTML.</p>
+        <h3>Compound selectors</h3>
+		<p class="left-align fragment">Combining selectors to get really specific!</p>
+			<ul class="fragment no_bullets">		
+						<li class= "blue">p em &#123;</li>
+			<li class= "blue">&nbsp;&nbsp;property: value;</li>
+			<li class= "blue">&#125;<br /><br /></li>
+			</ul>
+       <p class="left-align fragment">Selects all em elements that are within a paragraph</p>
+			<ul class="fragment no_bullets">		
+						<li class= "blue">#intro a &#123;</li>
+			<li class= "blue">&nbsp;&nbsp;property: value;</li>
+			<li class= "blue">&#125;<br /><br /></li>
+			</ul>
+       <p class="left-align fragment">Selects all link elements in elements with an id of "intro".</p>			
       </section>
-        
+ 
+		<section>
+         <h3>Let's add a compound selector rule!</h3>
+		<ul class="no_bullets">
+			<li>&lt;style&gt;<br /><br /></li>	
+			<li class="blue">&nbsp;&nbsp;&nbsp;#intro a &#123;</li>
+			<li class="blue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;font-style: italic;</li>
+			<li class="blue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#125;<br /><br /></li>
+			<li>&lt;/style&gt;</li>		
+		</ul>		
+			  </section>		
         <!-- Multiple values -->
         <section>
-        <h3>Property Values</h3>
-        <p>Each property can have one or more comma separated values.</p>
-<pre><code class = "html">
-p{
-  color: white;
-  background-color: red;
-  font-family: Arial, sans-serif;
-}
-</code></pre>
+        <h3><em class="green">Styling with Color and Fonts</em></h3>
       </section>
         
         <!-- Color-->
         <section>
-          <h3>Property: Color</h3>
-          <p>The color property changes the color of the text.</p>
-<pre><code class = "html">
-p {
-  color: red;
-  color: #ff0000;
-  color: rgb(255, 0, 0);
-}
-</code></pre>
-        <p>Color name</p>
-        <p>Hexadecimal value</p>
-        <p>RGB value</p>
-        <p><small>The 17 standard colors are: <font color="aqua" style="background:black;">aqua</font>, black, <font color="blue">blue</font>, <font color="fuchsia">fuchsia</font>, <font color="gray">gray</font>, <font color="grey">grey</font>, <font color="green">green</font>, <font color="lime">lime</font>, <font color="maroon">maroon</font>, <font color="navy">navy</font>, <font color="olive">olive</font>, <font color="purple">purple</font>, <font color="red">red</font>, <font color="silver" style="background:black;">silver</font>, <font color="teal">teal</font>, <font color="white" style="background:black;">white</font>, and <font color="yellow" style="background:black;">yellow</font>.</small></p>
+          <h3>Color</h3>
+					<p class="fragment left-align">The <em class="green">color</em> property sets the color of the font.</p>
+					<p class="fragment left-align">The <em class="green">background-color</em> property sets the color of the background.<br /><br /></p>					
+					<p class="fragment left-align">Color value can be defined in one of three ways:</p>
+					<ul>
+					<li class="fragment">By a recognized color name</li>
+					<li class="fragment">By a <em class="yellow">hexadecimal</em> value</li>
+					<li class="fragment">By an <em class="yellow">RGB</em> value</li>
+					</ul>
+					</section>
+					<section>
+					<h3>Recognized Color Names</h3>
+        <p class="left-align">The 17 standard colors are:<br /><br /><font color="aqua" style="background:black;">aqua</font>, <font color="black" style="background:silver;">black</font>, <font color="blue">blue</font>, <font color="fuchsia">fuchsia</font>, <font color="gray">gray</font>,<br /><br /><font color="grey">grey</font>, <font color="green">green</font>, <font color="lime">lime</font>, <font color="maroon" style="background:silver;">maroon</font>, <font color="navy" style="background:silver;">navy</font>,<br /><br /><font color="olive">olive</font>, <font color="purple" style="background:silver;">purple</font>, <font color="red">red</font>, <font color="silver" style="background:black;">silver</font>, <font color="teal">teal</font>,<br /><br /><font color="white" style="background:black;">white</font>, and <font color="yellow" style="background:black;">yellow</font>.<br /><br /></p>
+				<p class="fragment left-align">There are 141 named colors:</p>
+				<p class="fragment left-align">http://www.w3schools.com/cssref/css_colornames.asp</p>
+				</section>
+				<section>
+				<h3>Hexadecimal values</h3>
+				<p style="background-color: #A53C8D">Example &mdash; color: #A53C8D</p>
+				<p class="fragment left-align">Three pairs of numbers or letters, making a string of six</p>
+				<p class="fragment left-align">Includes 0 - 9 and A - F</p>
+					<ul class="fragment">
+				<li>The first pair equals red</li>
+				<li>The second pair equals green</li>
+				<li>The third pair equals blue</li>
+				</ul>
+        <p class="fragment left-align">Hex values are always preceeded by a pound sign</p>
+        </section>
+				<section>
+				<h3>RGB values</h3>
+					<p style="background-color: rgb(165, 60, 141)">Example &mdash; color: rgb(165, 60, 141)</p>
+				<p class="fragment left-align">Three comma-separated numbers from 0 to 255</p>
+					<ul class="fragment">
+				<li>The first number equals red</li>
+				<li>The second number equals green</li>
+				<li>The third number equals blue<br /><br /></li>
+				</ul>
+				<p class="fragment left-align">CSS3 introduces a 4th value, "a", setting opacity</p>
+					<p class="fragment left-align" style="background-color: rgba(165, 60, 141, 0.5)">Example &mdash; color: rgba(165, 60, 141, 0.5)</p>				
+</section>		
 
-        </section>
-        
-        <!-- Background color-->
-        <section>
-          <h3>Property: Background-color</h3>
-          <p>The background-color property changes the color of the background.</p>
-<pre><code class = "html">
-p {
-  background-color: black;
-  background-color: #000000;
-  background-color: rgb(0,0,0);
-}
-</code></pre>
-        </section>
-      
         <!-- Font family-->
+<section>
+          <h3>Font</h3>
+</section>		
         <section>
-          <h3>Property: Font-family</h3>
-          <p>The font-family property deﬁnes which font is used.</p>
-<pre><code class = "html">
-p {
-  font-family: "Times New Roman";
-  font-family: serif;
-  font-family: "Arial", sans-serif;
-}
-</code></pre>
-          <p>Specific font name</p>
-          <p>Generic name</p>
-          <p>Comma-separated list</p>
-        </section>
-      
-        <!-- Font size -->
+          <h3>5 different properties to style font!</h3>
+		  <ol>
+		  <li class="fragment">font-style
+			<ul class="no_bullets">
+				<li>example: <span class="green">font-style: italic;</span></li>
+				<li>values: <em>"normal", "italic"</em>, or <em>"oblique"</em><br /><br /></li>				
+			</ul>
+			</li>
+		  <li class="fragment">font-variant
+			<ul class="no_bullets">
+				<li>example: <span class="green">font-variant: small-caps;</span></li>
+				<li>values: <em>"normal", "small-caps"</em>, or <em>"inherit"</em><br /><br /></li>						
+			</ul>
+			</li>
+		  </ol>
+		  </section>
         <section>
-          <h3>Property: Font-size</h3>
-          <p>The font-size property speciﬁes the size of the font.</p>
-<pre><code class = "html">
-p {
-  font-size: 12px;
-  font-size: 1.5em;
-  font-size: 100%;
-}
-</code></pre>
-          <p>Pixels</p>
-          <p>"em"</p>
-          <p>Percentage</p>
-        </section>
+		  <ol start="3">
+		  <li>font-weight
+			<ul class="no_bullets">
+				<li>example: <span class="green">font-weight: bold;</span></li>
+				<li>values: <em>"normal", "bold", "bolder", "lighter", </em></li>
+				<em>"100", "200", "300", ... "900"</em><br /><br /></li>						
+			</ul>
+			</li>			
+		  <li class="fragment">font-size
+			<ul class="no_bullets">
+				<li>example: <span class="green">font-size: 12px;</span></li>
+				<li class="fragment">values:
+					<ul>
+				<li class="fragment">absolute: pixels (ie 12px)</li>
+				<li class="fragment">relative: percents (ie 100%) and ems (ie 1.5em)<br /><br /></li>	
+					</ul></li>
+			</ul>
+			</li>
+			</ol>
+		  </section>
+        <section>
+		  <ol start="5">			
+		  <li>font-family
+			<ul class="no_bullets">
+				<li>example: <br /><span class="green">font-family: Corbel,'Helvetica Neue', Helvetica, Arial, sans-serif;</span><br /><br /></li>
+				<li class="fragment">Computers don't all have the same fonts installed...so provide alternatives<br /><br /></li>
+				<li class="fragment">Specific to general, in a comma-separated list.<br /><br /></li>
+				<li class="fragment">Fonts with two-word names are in quotes</li>
+			</ul>
+			</li>
+		  </ol>
+		  </section>		  
+
+		<section>
+          <h3>Bonus font properties!</h3>
+		  <ol start="6">
+		  <li class="fragment">text-transform
+			<ul class="no_bullets">
+				<li>example: <span class="green">text-transform: uppercase;</span></li>
+				<li><em>"capitalize", "uppercase", "lowercase",</em> or <em>"none"</em><br /><br /></li>
+			</ul>
+			</li>
+		 <li class="fragment">line-height
+			<ul class="no_bullets">
+				<li>example: <span class="green">line-height: 1.5;</span></li>
+				<li>values: <em>numbers, percents, pixels,</em> or <em>"ems"</em><br /><br /></li>
+			</ul>
+			</li>		  			
+		  </ol>
+		</section>
         
         <!-- Fonts-->
         <section>
-          <h3>Property: Fonts (shorthand)</h3>
-<pre><code class = "html">
-p {
-  font-style: italic;
-  font-weight: bold;
-  font-size: 10px;
-  font-family: sans-serif;
-}
-</code></pre>
-          OR
-<pre><code class = "html">
-p {
-  font: italic bold 10px sans-serif;
-}
-</code></pre>
-        </section>
-      
+          <h3>Shorthand Font Declaration</h3>
+		  <p class="fragment left-align">example:<br />
+		  <span class="green" style="font-size:.8em">font: italic small-caps bold 34px/150% "Times New Roman", Times, serif;</span><br /><br /></p>
+		<p class="fragment left-align">font-style &rarr; font-variant &rarr; font-weight &rarr; font-size / line height &rarr; font-family<br /><br /></p>
+		</section>
+		<section>
+          <h3>Shorthand Font Declaration</h3>		
+		<p class="left-align">To use shorthand, you must declare at least font-size and font-family</p>
+		<p class="fragment left-align">Family has to come last</p>
+		<p class="fragment left-align">If you're using them, font-style, font-variant and font-weight have to come first.</p>
+		</section>
+<section>
+          <h3>Let's code it!</h3>
+		<ul class="no_bullets">
+			<li>Add the shorthand font rule to your heading<br /><br /></li>	
+			<li class="blue">&nbsp;&nbsp;&nbsp;h1 &#123;</li>
+			<li class="blue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;font: italic small-caps bold 34px/150% "Times New Roman", Times, serif;</li>
+			<li class="blue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#125;</li>
+		</ul>	
+			  </section>
         <!-- Connecting HTML to CSS-->
         <section>
-          <h3>Connecting CSS to HTML</h3>
-          <p class = "green">3 ways</p>
-          <p>"Inline"</p>
-          <p>"Embedded"</p>
-          <p>"External"</p>
+          <h3>Attaching CSS to your web page</h3>
+          <p class = "green left-align fragment">There are three ways</p>
+					<ul>
+          <li class="fragment">Inline</li>
+          <li class="fragment">Embedded</li>
+          <li class="fragment">Linked</li>
+					</ul>
         </section>
       
         <!-- Inline -->
         <section>
-          <h3>Connecting CSS to HTML: Inline</h3>
-<pre><code class = "html">
-  &lt;p style="color:red">Some text.&lt;/p>
-</code></pre>
-          <p>Uses the HTML attribute style.</p>
-          <p>Difficult to use in large projects</p>
-          <p>Not preferred.</p>
+          <h3>Inline</h3>
+
+  <p class="green">&lt;p style="color: red;"><span style="color:white">Some text.</span>&lt;/p><br /><br ></p>
+
+          <p class="left-align fragment">Uses "style", which is an HTML attribute</p>
+          <p class="left-align fragment">Difficult to use in large projects</p>
+          <p class="left-align fragment">Not preferred</p>
         </section>
         
         <!-- Embedded -->
         <section>
-          <h3>Connecting CSS to HTML: Embedded</h3>
-<pre><code class = "html">
-&lt;head>
-  &lt;style type="text/css">
-    p {
-      color: blue;
-      font-size: 12px;
-    }
-  &lt;/style>
-&lt;/head>
-</code></pre>
-          <p>Inside &lt;head> element.</p>
-          <p>Uses &lt;style> tag.</p>
-          <p>Can only be used in one html file</p>
+          <h3>Embedded</h3>
+<p class="fragment">This is how we have been doing it in our exercises.<br /><br /></p>
+		<ul>
+          <li class="fragment">"Embedded" inside the &lt;head> element.</li>
+          <li class="fragment">Uses &lt;style> tag.<br /><br /></li>
+					</ul>
+          <h3 class="fragment">What is a big drawback to this method?</h3>
         </section>
         
         <!-- External-->
         <section>
-          <h3>Connecting CSS to HTML: Linked</h3>
-<pre><code class = "html">
-&lt;head>
-  &lt;link rel="stylesheet" type="text/css" href="style.css">
-&lt;/head>
-</code></pre>
-          <p>Shared resource for several pages.</p>
-          <p>Reduced ﬁle size &amp; bandwidth</p>
-          <p>Easy to maintain in larger projects.</p>
-          <p>Preferred by nerds everywhere!</p>
+          <h3>Linked</h3>
+		  <ul class="no_bullets">
+			<li>&lt;head&gt;</li>
+			<li>&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;</li>
+			<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;My Very First Web Page!</li>
+			<li>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/title&gt;<br /><br /></li>	
+			<li class="fragment green">&nbsp;&nbsp;&nbsp;&nbsp;&lt;link rel="stylesheet" type="text/css"  &crarr;<br />&nbsp;&nbsp;&nbsp;&nbsp;href="style.css"&gt;<br /><br /></li>	
+			<li>&lt;/head&gt;</li>
+		</ul>
+		</section>
+		<section>
+		          <h3>Advantages of linked (external) style sheets:</h3>
+				<ul>			
+          <li class="fragment">Shared resource for several pages.</li>
+          <li class="fragment">Reduced ﬁle size &amp; bandwidth</li>
+          <li class="fragment">Easy to maintain in larger projects.</li>
+					</ul>
         </section>
       
         <!-- Exercise-->
         <section>
-          <h3>Let's develop it</h3>
-          <ul>
-            <li>Create a new .css file</li>
-            <li>Add a link to the file in the head of the portfolio made last time</li>
-            <li>Add styles to change the colors, background colors or fonts of different parts of </li>
-            <li>Try using ids and classes to change specific elements</li>
-          </ul>
+          <h3>Let's code it (part 1)</h3>
+          <ol>
+            <li class="fragment">Open a new tab in your text editor<br /><br /></li>
+            <li class="fragment">Copy all the rules between the style tags on your index.html<br /><br /></li>
+            <li class="fragment">Paste them on your new page<br /><br /></li>
+            <li class="fragment">Save your file inside the "styles" folder you created earlier. Name it "styles.css".<br /><br /></li>
+
+          </ol>
         </section>
+        <section>
+          <h3>Let's code it (part 2)</h3>
+          <ol start="5">
+						<li class="fragment">Delete the style tags and everything within them on your index.html page<br /><br /></li>
+            <li class="fragment">Where the styles used to be, code the following:<br /><br />
+							&lt;link rel="stylesheet" type="text/css" href="styles/style.css">:<br /><br /></li>
+
+            <li class="fragment">Save your index.html page and open it in a browser<br /><br /></li>
+						</ol>
+            <p class="fragment green">Are your styles still there?</p>
+          </ol>
+        </section>				
         
         <!-- Cascading-->
         <section>
