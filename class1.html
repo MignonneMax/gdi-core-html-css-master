@@ -387,9 +387,9 @@
 		 <p class="fragment left-align">If the element does <em class="yellow">not</em> contain content, it is said to be an <em class="yellow">empty element</em></p>
 		 <p class="fragment left-align">Three ways to write empty elements:</p>
 		 <ul>
-		 <li class="fragment">&lt;b>&lt;/b></li>
-		 <li class="fragment">&lt;b /></li>	
-		 <li class="fragment">&lt;b></li>
+		 <li class="fragment">&lt;br>&lt;/br></li>
+		 <li class="fragment">&lt;br /></li>	
+		 <li class="fragment">&lt;br></li>
 		 </ul>
 		 <p class="fragment left-align">The <em class="yellow">self-closing</em> tag syntax is required in XHTML. It is still recommended for clarity.</p>	
 		 </section>
@@ -705,6 +705,32 @@
         	<p>Let's add <em class="green">inline</em> elements to our web page.</p>
         </section>		
         <!-- Link Attributes -->
+		
+          <section>
+        	<h3>Review</h3>
+ <ul>
+ <li class="fragment">A little HTML history</li>
+ <li class="fragment">Difference between HTML and CSS</li>
+ <li class="fragment">Elements and Tags
+	<ul>
+<li class="fragment">Doctype, html tag, head and body tags</li>	
+<li class="fragment">Headings, paragraphs, line breaks</li>
+<li class="fragment">Container elements vs. empty elements</li>
+<li class="fragment">Block-level elements vs. inline elements</li>
+<li class="fragment">&lt;i> and &lt;em> tags</li>
+<li class="fragment">&lt;b> and &lt;strong> tags</li>
+<li class="fragment">&lt;span> tags</li>
+	</ul></li>
+</ul>
+        </section>      		
+       <section>
+        	<h3>To finish up HTML</h3>	   
+<ul>
+ <li class="fragment">Links and images</li>
+ <li class="fragment">Organizing your files and folders</li>
+ <li class="fragment">Writing clear code</li>
+ </ul>
+        </section>      		
        <section>
         	<h3>Links and Images</h3>
         	<p class="fragment">Both require <em class="green">attributes</em> to tell the browser more information.</p>
@@ -727,43 +753,37 @@
             <li>href attribute: "http://www.girldevelopit.com"</li>
             <li>alt attribute: "Girl Develop It"<br /><br /></li>
           </ul>
-<p class="fragment green left-align">&lt;a href ="http://www.girldevelopit.com" alt = "Girl Develop It Homepage"><span style="color:white">Girl Develop It</span>&lt;a><br /><br /></p>
+<p class="fragment green left-align">&lt;a href ="http://www.girldevelopit.com" title = "Girl Develop It Homepage"><span style="color:white">Girl Develop It</span>&lt;/a><br /><br /></p>
         <p class="fragment">The &lt;a&gt; tag surrounds text or images to turn them into links.</p>
         </section>
 		
         <section>
-        	<h3>Link Attributes</h3>
-        	<p>Links can have attributes that tell the link to do different actions like open in a new tab, or launch your e-mail program.</p>
-        	<pre><code>
-&lt;a href="home.html" target="_blank">Link Text&lt;/a>
-        	</code></pre>
-        	<p><small>Link opens in a new window/tab with <strong>target="_blank"</strong></small></p>
+        	<h3>Link continued...</h3>
+
+        	<p class="fragment">Using <em class="green">target="_blank"</em> causes the link to open in a new window/tab<br /><br /></p>
+			<p class="fragment">example: <span class="green">&lt;a href="home.html" target="_blank"></span>Link Text<span class="green">&lt;/a></span><br /><br /></p>			
         	<!-- Change email to fit your chapter's needs-->
-        	<pre><code>
-&lt;a href="mailto:info@girldevelopit.com">E-mail us!&lt;/a>
-        	</code></pre>
-        	<p><small>Link opens mail program by inserting <strong>mailto:</strong> directly before the email address.</small></p>
+			<p class="fragment">Inserting <em class="green">mailto:some_email_address.com</em> into the href attribute causes the link to open the default mail client<br /><br /></p>
+			<p class="fragment">example: <span class="green">&lt;a href="mailto:info@girldevelopit.com"></span>E-mail us!<span class="green">&lt;/a></span></p>
+ 
 
         </section>
         <section>
         	<h3>Let's develop it!</h3>
         	<p>Let's add a link within our paragraph.</p>
         	<p>Link to the Girl-Develop-It website!<br /><br /></p>
-<p class="fragment green left-align">&lt;a href ="http://www.girldevelopit.com" alt = "Girl Develop It Homepage"><span style="color:white">Girl Develop It</span>&lt;a><br /><br /></p>
+<p class="fragment green left-align">&lt;a href ="http://www.girldevelopit.com" title = "Girl Develop It Homepage"><span style="color:white">Girl Develop It</span>&lt;/a><br /><br /></p>
         </section>       		
          <section>
           <h3>Element: Image</h3>
-          <p>Images have three components</p>
+<p class="fragment green">&lt;img src ="http://girldevelopit.com/assets/pink-logo.png" alt = "Girl Develop It Logo"/><br /><br /></p>		  
+          <p class="fragment left-align">Image elements have three components</p>
           <ul>
-            <li>Tag: &lt;img/></li>
-            <li>Src attribute: "http://girldevelopit.com/assets/pink-logo.png"</li>
-            <li>Alt attribute: "Girl Develop It logo"</li>
+            <li class="fragment">Tag: &lt;img/></li>
+            <li class="fragment">Src attribute: "http://girldevelopit.com/assets/pink-logo.png"</li>
+            <li class="fragment">Alt attribute: "Girl Develop It logo"<br /><br /></li>
           </ul>
-<pre><code>
-&lt;img src ="http://girldevelopit.com/assets/pink-logo.png" alt = "Girl Develop It Logo"/>
-</code></pre>
-<img src ="http://girldevelopit.com/assets/pink-logo.png" alt = "Girl Develop It Logo"/>
-          <p><small>* Notice: &lt;img> is an empty element. It is also an inline element.</small></p>
+<p class="fragment left-align"> &lt;img> is an empty element. It is also an inline element.<br /><br /></p>	
 
         </section>
        <section>
@@ -773,9 +793,9 @@
         </section>
 		<section >
 			<h3>Good Housekeeping: Managing Files and Folders</h3>
-			<p class="left-align fragment">Create a top level folder and put your index.html document inside. This is your "site root folder".</p>
-			<p class="left-align fragment">Inside, next to index.html, create a new folder called "styles". </p>
-			<p class="left-align fragment">Create another folder next to "styles" called "images". Copy your images into the "images" folder.</p>
+			<p class="left-align fragment">Create a top level folder and put your index.html document inside. This is your "site root folder".<br /><br /></p>
+			<p class="left-align fragment">Inside, next to index.html, create a new folder called "styles".<br /><br /></p>
+			<p class="left-align fragment">Create another folder next to "styles" called "images". Copy your images into the "images" folder.<br /><br /></p>
 			<p class="left-align fragment">Now you have images in a folder, but you need to tell the browser where they are!</p>
 		</section>		
         <!-- relative & absolute links -->
@@ -784,7 +804,7 @@
         	<ul>
        		<li class="fragment"><strong class="blue">Absolute:</strong>
     				<ul>
-    					<li class = "fragment">Refer to a specific location of a file on a server<br /><code class="blue">"http://www.girldevelopit.com/chapters/detroit"</code></li>
+    					<li class = "fragment">Refer to a specific location of a file on a server<br /><code class="blue">src = "http://www.girldevelopit.com/chapters/detroit"</code></li>
     					<li class = "fragment">Typically used when pointing to a link that is not within your own domain.</li>
 						<li class = "fragment">Easy to use. There's no need for a starting point.</li>
     					<li class = "fragment">Think ~ searching for an address on MapQuest.</li>						
@@ -798,6 +818,7 @@
         	<ul>			
         		<li><strong class="blue">Relative:</strong>
         			<ul>
+   					<li class = "fragment">Refer to a local file in your site root folder<br /><code class="blue">src = "images/myimage.jpg"</code></li>					
         				<li class = "fragment">Relative paths change depending upon the page the link is on.</li>
         				<li class = "fragment">Describes the location of the file relative to the file you're in.</li>
 						<li class = "fragment">The current file is your "starting point"</li>
@@ -822,32 +843,38 @@
         	<h3>Let's Develop It</h3>
         	<p>Let's add that image to our site!</p>
         	<p>You'll be using the image you just put in your images folder and linking to it using a relative path.</p>
-        </section>			
+			<p class="fragment green left-align">&lt;img src ="images/your_image_name.jpg" alt = "describe your image"/><br /><br /></p>	
+			<p class="fragment left-align">Replace <em class="green">"your_image_name.jpg"</em> with the name and file type of your image.</p>		
+        </section>	
+
+       <section>
+        	<h3>Writing Clean Code</h3>
+        	<p class="fragment">1. Nest your tags properly!</p>
+
+        </section>		
+
 
         <!-- Nesting-->
         <section>
           <h3>Nesting</h3>
-          <p>All elements "nest" inside other elements...except the HTML element! (every thing else nests inside <em>it</em>)</p>
+          <p class="fragment left align">All elements "nest" inside other elements...except the HTML element! (every thing else nests inside <em>it</em>)</p>
+		<p class="fragment left-align">If you consistently indent your code, you will avoid "bad nesting"!</p>		  
           <img src = "images/owls.jpg"/>
-          <p>Whichever element OPENS first CLOSES last!</p>
+          
  
         </section>
         <section>
-          <h3>In your website...</h3>
-          <p>Your "a" element nests inside your "p" element, which nests inside your "body" element which nests inside your "html" element.</p>
-					<p class="fragment">Properly indenting your code will help you avoid "bad nesting"!</p>			  
+          <h3>For example:</h3>
+          <p class="fragment left-align">Your "a" element nests inside your "p" element, which nests inside your "body" element which nests inside your "html" element.<br /><br /></p>
+<p class="fragment left-align">Whichever element OPENS first CLOSES last!</p>	  
         </section>				
         
         <!--example of nesting -->
-        <section>
-        	<h3>Another way to look at it...The Document Tree</h3>
-			<p><img src = "images/document_tree.jpg"/></p>		
-			<p>This is known as the "Document Object Model" (DOM). It's a very important concept as you get further into coding.</p>
-        </section>
+
         <!-- Elements -->
         <!-- Paragraphs-->
         <section>
-          <h3>White Spaces: It's only for humans!</h3>
+          <h3>2.  Make good use of white space!</h3>
 		  <p>Browsers don't care about white space</p>
           <div>
           <div class = "left" style = "width:50%">
@@ -877,43 +904,32 @@
 
         <!--Comments-->
         <section>
-        	<h3>Comments</h3>
-        	<p>You can add comments to your code that will not be seen by the browser, but only visible when viewing the code.</p>
-        	<pre><code>
-&lt;!-- Comment goes here -->
-        	</code></pre>
-        	<p><small>Comments can be used to organize your code into sections so you (or someone else) can easily understand your code. It can also be used to 'comment out' large chunks of code to hide it from the browser.</small></p>
-        	<pre><code>
-&lt;!-- Beginning of header -->
-   &lt;div id="header">Header Content &lt;/div>
-&lt;!-- End of header -->
+          <h3>3. Leave yourself notes!</h3>
+        	<p class="fragment">You can add comments to your code. The browser ignores them, but <em>you</em> (or another coder) can see them.<br /><br /></p>
 
-&lt;!--   
-  &lt;ol>
-    &lt;li>List Item&lt;/li>
-    &lt;li>Another List Item&lt;/li>
-  &lt;/ol> 
---> 
-        	</code></pre>
+<p class="fragment green">&lt;!-- Comment goes here --><br /><br /></p>
+        </section>
+
+        <!--Comments-->
+        <section>
+        	<p>Use them to organize your code:</p>
+ <ul class="fragment no_bullets">
+<li class="green">&lt;!-- Beginning of header --></li>
+<li>   &lt;div id="header">Header Content &lt;/div></li>
+<li class="green">&lt;!-- End of header --><br /><br /></li>
+</ul>
+<p> Or 'comment out' code (to hide it from the browser):</p>
+ <ul class="fragment no_bullets">
+<li class="green">&lt;!--   </li>
+<li>  &lt;ol></li>
+<li>    &lt;li>List Item&lt;/li></li>
+<li>    &lt;li>Another List Item&lt;/li></li>
+<li>  &lt;/ol> </li>
+<li class="green"> --> </li>
+
+</ul> 
         </section>               
         <!-- Character codes-->
-        <section>
-          <h3>Character codes</h3>
-          <p>There are character codes for many different characters in many different languages</p>
-          <div class="left" style="width:50%">
-          <ul>
-            <li>Delta: &amp;delta; &delta;</li>
-            <li>Copyright symbol: &amp;copy; &copy;</li>
-            <li>Grave: &amp;grave; &grave;</li>
-            <li>An grave a: &amp;agrave; &agrave;</li>
-            <li>A full list is available at <a href="http://htmlandcssbook.com/extras/html-escape-codes/" target="_blank">htmlandcssbook.com</a></li>
-          </ul>
-          </div>
-          <div class="right" style="width: 50%;">
-          	<img src="images/example-characters.png" alt="Example of Characters"/>
-          </div>
-          
-        </section>        <!-- -->
 		<section>
           <h2>Questions?</h2>
           <div style = "font-size:1200%; height:100%; margin-top:40%" class ="blue">?
