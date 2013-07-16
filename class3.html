@@ -42,26 +42,25 @@
           <h3>Beginning HTML and CSS</h3>
           <h4>Class 3</h4>
         </section>
-        
-        <!-- Welcome-->
-        <section>
-          <h3>Welcome!</h3>
-          <div class = "left-align">
-          <p>Girl Develop It is here to provide affordable and accessible programs to learn software through mentorship and hands-on instruction.</p>
-          <p class ="green">Some "rules"</p>
-          <ul>
-            <li>We are here for you!</li>
-            <li>Every question is important</li>
-            <li>Help each other</li>
-            <li>Have fun</li>
-          </ul>
-          </div>
-        </section>
-        
          <section>
-        	<h3>What we'll be making today</h3>
+        	<h3>What we'll learn in this section</h3>
+					<ul>
+					<li class="fragment">Parts of a web page</li>
+					<li class="fragment">The &lt;div> element</li>					
+					<li class="fragment">The box model</li>
+					<li class="fragment">Padding, margin and borders</li>
+					</ul>
+				</section>
+         <section>
+        	<h3>Parts of a web page</h3>
         	<div class="left" style="width: 45%;">
-        		<p>Today we will be making a site from scratch using divs and spans to create a header, footer, sidebar and a content area.</p>
+        		<p class="fragment">Nearly every web page is divided into four parts:</li>
+						<ul>
+						<li class="fragment">header</li>
+						<li class="fragment">footer</li>
+						<li class="fragment">sidebar</li>
+						<li class="fragment">content area</li>
+						</ul>
         	</div>
         	<div class="right" style="width: 45%;">
         		<img src="images/session2site.png">
@@ -69,41 +68,21 @@
         </section>
         
         <!-- Inline vs. block-->
-        <section>
-          <h3>Inline vs Block</h3>
-          <div class = "left" style="width: 50%; text-align: left;">
-            <div class = "fragment">
-              <p>So far, we have mostly seen <span class="green">"block"</span> elements</p>
-              <p>They appear on the next line, like paragraphs</p>
-            </div> 
-            <br/><br/>
-            <div class = "fragment">
-              <p>There are also <span class="green">"inline"</span> elements</p>
-              <p>They appear on the same line that they are written on.</p>
-            </div>
-          </div>
-          <div class="right fragment">
-          	<img src="images/example-blockinline.png" alt="example of inline and block elements" />
-          </div>
-        </section>
+
         <!-- Inline v block again-->
-        <section>
-          <h3>Block &amp; Inline Elements,</h3>
-          <ul>
-            <li>CSS divides HTML into two types: inline and block.</li>
-            <li>After block elements, browsers render a new line.</li>
-            <li>Inline elements: img, a, br, em, strong</li>
-            <li>Block elements: p, h1, ul, li, almost everything else</li>
-          </ul>
-        </section>
+
         <section> 
-        	<h3>Element: Div</h3>
+        	<h3>Divs</h3>
+		
         		<ul>
-	        		<li>Block level element. Each new div is rendered on a new line.</li>
-	        		<li>A division, or section of content within an HTML page.</li>
-	        		<li>Used to group elements to format them with CSS.</li>
-	        		<li>Apply IDs and Classes to divs to control their styles with CSS.</li>
+	        		<li class="fragment">Divs let us divide web pages into relevant parts &mdash; the 4 main parts and smaller areas, as well.</li>	
+	        		<li class="fragment">With divs, we group elements so they can be styled the same way</li>
+	        		<li class="fragment">We give divs ids and classes so we can style them using CSS.</li>
         		</ul>
+	<p class="left-align fragment">Example: <span class="green">&lt;div id="header"></span></p>							
+				</section>
+				<section>
+        	<h3>Other elements are often nested inside divs</h3>				
 <pre><code>&lt;div>
    &lt;p>Content&lt;p>
    &lt;p>Content&lt;p>
@@ -117,35 +96,35 @@
         </section>
   <!-- Div continued-->
         <section>
-          <h3>Grouping elements with div</h3>
+          <h3>Case Study:</h3>
           <div class = "left-align">
           <ul>
-          <li>The div tag is used everywhere to group elements together into sections.</li>
-          <li>For example, what if we want the first 2 paragraphs of a section to be right-aligned, purple & bold, but we don't want any other paragraphs to be right-aligned?</li>
-          <li>We would wrap them in a div element to style them differently.</li>
+          <li>You want the first 2 paragraphs of your webpage to be right-aligned, green & italic, but you don't want these styles to be applied to any other paragraphs:</li>
+
           </ul>
            </div>
         </section> 
         
         <section>
-          <h3>Grouping elements with div, cont.</h3>
-<pre><code class = "html">
-.align-right{
-  text-align:right;
-  color: purple; 
-  font-weight: bold;
-}
-</code></pre>
-
+          <h3>Solution:</h3>
+<p class="left-align">Wrap them in a div tag to style them differently.</p>					
 <pre><code class ="html">
-&lt;div class="align-right">
+&lt;div class="special_styles">
   &lt;p>Lorem ipsum dolor sit amet, consectetur adipisicing elit&lt;/p>
   &lt;p>Sed do eiusmod tempor incididunt ut labore et dolore.&lt;/p> 
 &lt;/div>
 &lt;p>Magna aliqua. Ut enim ad minim veniam.&lt;/p> 
 &lt;p>Quis nostrud exercitation ullamco.&lt;/a>
 </code></pre>
-<div style = "text-align:right;font-weight: bold; font-size: 70%;" class = "green">
+
+<pre><code class = "html">
+.special_styles{
+  text-align:right;
+  color: green; 
+  font-style: italic;
+}
+</code></pre>
+<div style = "text-align:right;font-style: italic; font-size: 70%;" class = "green">
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
   <p>Sed do eiusmod tempor incididunt ut labore et dolore.</p>
 </div>
@@ -157,81 +136,18 @@
         </section> 
         <section>
           <h3>Let's Develop It</h3>
-         <p class="left-align">Let's create a site using divs to separate content into different sections on our page.</p>
-         <p class="left-align">Create a header, content area, sidebar, and a footer.</p>         
+         <p class="left-align">Divide your web page into the 4 main parts using &lt;div> tags:</p>
+						<ul>
+						<li>header</li>
+						<li>footer</li>
+						<li>sidebar</li>
+						<li>content</li>
+						</ul>				 
+         <p class="left-align"><br /><br />Give each new div an id with the name that corresponds to its part.</p>
+				 <p class="fragment green"><em>hint: sidebars are a good place for lists.</em></p>
+				 <p class="fragment green"><em>hint: for a footer, add a "copyright" with your name and the year to the bottom of your page.</em></p>				 
         </section> 
-        <section>
-        	<h3>Element: Span</h3>
-        	<ul>
-        	<li>Inline element. Each new span is rendered next to each other &amp; only wraps when it reaches the edge of the containing element.</li>
-        	<li>Can be used to apply styles to text inline so as not to break the flow of content.</li>
-        	</ul>
-        </section>     
-        <!-- Span -->
-        <section>
-          <h3>Span</h3>
-          <p>Span is used to apply a specific style inline</p>
-          
-<pre><code class ="html">
-.yellow{
-  color:yellow;
-}
-</code></pre>
-
-<pre><code class ="html">
-&lt;p>Paragraph with &lt;span class ="yellow">yellow&lt;/span> text.&lt;/p>
-</code></pre>
-
-<p>Paragraph with <span class ="yellow">yellow</span> text.</p>
-        </section>
-        <!-- Exercise-->
-         <section>
-          <h3>Let's Develop It</h3>
-         <p>Let's add some spans to our content to help highlight some text. </p>
-        </section>      
-        <!-- Pseudo class-->
-        <section>
-          <h3>Pseudo-classes, more CSS for links</h3>
-          <div class ="left left-align" style="width:50%">
-          <p>Changing the format of a link when you hover over it is accomplished by using pseudo-classes.</p>
-          <br/>
-          <p>CSS pseudo-classes are used to add special effects to some selectors.</p>
-          </div>
-          Syntax:	
-<pre><code class ="html">
-selector:pseudo-class
-{
-  property:value;	
-}
-</code></pre>
-          Example:
-<pre><code class ="html">
-a:link
-{
-  text-decoration: none;
-}
-</code></pre>
-        </section>
-        
-        <!-- Pseudo class-->
-        <section>
-          <h3>Pseudo-classes, more CSS for links</h3>
-<pre><code class ="html">
-  a:link	{color:#FF0000;} /* unvisited link */
-  a:visited	{color:#00FF00;} /* visited link */
-  a:hover	{color:#FF00FF;} /* mouse over link */
-  a:active	{color:#0000FF;} /* selected link */
-</code></pre>
-          <p>Note: a:hover MUST come after a:link and a:visited in the CSS definition in order to be effective!</p>
-          <p>Note: a:active MUST come after a:hover in the CSS definition in order to be effective!</p>
-        </section>
        
-        <!-- Exercise-->
-        <section>
-          <h3>Let's Develop It</h3>
-          <p>Add pseudo classes to your links</p>
-        </section>
-        
         <!-- Box model-->
         <section>
           <h3>Box Model</h3>
@@ -381,7 +297,7 @@ padding: 10px 5px 3px 5px;
 		<section>
 			<h3>Property: Height</h3>
 			<p>Sets the height of an element.</p>
-			<p>Does not include padding or borders, remember these add to the width.</p>
+			<p>Does not include padding or borders, remember these add to the height.</p>
 		</section>
 		<!-- Exercise -->
 		<section>
