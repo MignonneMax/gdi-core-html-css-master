@@ -1,0 +1,44 @@
+#outer-wrap {
+	width: 800px;
+	height: 800px;
+	border: 1px solid black;
+	overflow: hidden;
+	margin: 25px auto;
+	background-color: #cccccc;
+}
+
+.content {
+	width: 100px;
+	height: 100px;
+	background-color: white;
+	margin: 10px;
+}
+
+#box_a {
+	width: 400px;
+	height: 300px;
+	border: 20px solid pink;
+	background-color: green;
+	}
+	
+#box_b {
+/*	position: relative;*/
+	width: 400px;
+	height: 300px;
+	border: 20px solid blue;
+	background-color: yellow;
+	}
+
+/*
+#box_a .content{
+	position: relative;
+	top: -10px;
+	left: 45px;
+	}
+	
+#box_b .content{
+	position: absolute;
+	top: -10px;
+	left: 45px;
+	}
+*/

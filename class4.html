@@ -42,33 +42,24 @@
           <h3>Beginning HTML and CSS</h3>
           <h4>Class 4</h4>
         </section>
-        
-        <!-- Welcome-->
-        <section>
-          <h3>Welcome!</h3>
-          <div class = "left-align">
-          <p>Girl Develop It is here to provide affordable and accessible programs to learn software through mentorship and hands-on instruction.</p>
-          <p class ="green">Some "rules"</p>
-          <ul>
-            <li>We are here for you!</li>
-            <li>Every question is important</li>
-            <li>Help each other</li>
-            <li>Have fun</li>
-          </ul>
-          </div>
-        </section>
-        
-        <section>
-         <h3>Static Positioning</h3>
-         <div class = "left-align">
-         <p>HTML elements are positioned static by default.</p>
-         <p>Static elements are positioned in the normal ﬂow of the page</p>
-         <p>Static elements ignore top, bottom, right or left property specifications.</p>
-         </div>
-       </section>
+          <section>
+        	<h3>What we'll learn in this section</h3>
+ <ul>
+ <li class="fragment">Positioning elements with CSS</li>
+ <li class="fragment">Static position</li>
+ <li class="fragment">Relative position</li>
+ <li class="fragment">Absolute position</li>
+ <li class="fragment">The "float" property</li>
+ </ul>
+        </section>       
+<section>
+<h3>Positioning</h3>
+<p>The placement of elements on your webpage</p>
+<p>The default position is called "static"</p>
+</section>        
        
        <section>
-         <h3>Static Positioning</h3>
+         <h3>Static Positioning for inline elements</h3>
          <p>In normal flow, inline boxes flow from left to right, wrapping to next line when needed.</p>
 <pre><code class = "html">
 &lt;img src="images/cookie1.png"/>
@@ -79,6 +70,7 @@
 &lt;img src="images/cookie3.png"/>
 
 </code></pre>
+<div class="left-align">
 <img src="images/cookie1.png"/>
 <img src="images/cookie2.png"/>
 <img src="images/cookie3.png"/>
@@ -87,10 +79,11 @@
 <img src="images/cookie3.png"/>
 <img src="images/cookie2.png"/>
 <img src="images/cookie3.png"/>
+</div>
        </section>
        
        <section>
-         <h3>Static Positioning</h3>
+         <h3>Static Positioning for block elements</h3>
          <p>In normal flow, block boxes flow from top to bottom, making a new line after every box.</p>
 <pre><code class ="html">
  &lt;p>Greetings&lt;/p>
@@ -107,19 +100,15 @@
        <!-- Relative Positioning-->
        <section>
          <h3>Relative Positioning</h3>
-         <div class = "left-align">
-         <ul>
-         <li>Takes the element out of the normal flow, allowing it to be moved to the top, left, right or bottom. </li>
-         <li>Does not affect the elements surrounding it.</li>
-         <li>Makes an element a "positioning context" in which to position other elements relative to it.</li>
-         <li>Relative positioning and absolute positioning are used together.</li>
-         </ul>
-         </div>
+
+<p class="left-align">Tells an element to be displayed in a different place relative to its static position.<br /><br /></p>
+<p class="left-align green fragment">How? By defining where the top, right, bottom, or left edge should be.<br /><br /></p>
+<p class="left-align fragment">The elements around it behave like it is still in the static spot.</p>
        </section>
        
        <section>
          <h3>Relative Positioning</h3>
-         <p>The "relative" value will still put the element in the normal flow, but then offset it according to top/left/right/bottom properties.</p>
+         <p>Example:</p>
 
 <pre><code class = "html">
   .relative{
@@ -130,53 +119,54 @@
     background-color: yellow;
   }
 </code></pre>
+<p>This sentence "sees" the relatively positioned div as if it were still in its static position.</p>
  <div style="border:2px solid black;">
  <div style="position: relative; left: 80px; top: 20px;
    height: 100px; background-color: yellow; color:black; text-align:left">
    Hello, hi!
  </div>
  </div>
+ <p>This sentence does the same.</p>
        </section>
        <!-- Absolute positioning-->
        <section >
          <h3>Absolute Positioning</h3>
          <div class = "left-align">
-         <ul>
-         <li>Positions element outside of the normal flow.</li>
-         <li>An absolutely positioned element is offset from its container block, positioned relative.</li>
-         <li>Its container block is the first element that has a position other than static.</li>
-         <li>If no such element is found, the container block is &lt;html>.</li>
-         <li>Other elements act as if it's not there.</li>
-         <li>Determined by its oﬀset values in the properties top, bottom, right and left.</li>
+         <ul class="no_bullets">
+         <li>Tells an element exactly where you want it placed within a defined container element.<br /><br /></li>
+         <li class="green fragment">You define the container element by giving it a position of "relative".<br /><br /></li>				 
+         <li class="fragment">Use the top, bottom, left, or right of the defined container as coordinates.<br /><br /></li>
+
+         <li class="green fragment">Other elements completely ignore the absolutely positioned element.</li>
          </ul>
          </div>
        </section>
        
        <section  style="border: 1px solid black">
          <h3>Absolute Positioning</h3>
-         <p>The "absolute" value will take the element out of the normal flow and position it in relation to the window (or the closest non-static element).</p>
+         <p>Example: </p>
 <pre><code class = "html">
   .top{
     position: absolute; 
-    top: -40px; 
-    right: 10px; 
+    top: -20px; 
+    right: 40px; 
     background-color: yellow
   }
 </code></pre>
 <pre><code class = "html">
   .bottom{
     position: absolute; 
-    bottom: -40px; 
+    bottom: -20px; 
     left:60px; 
     background-color: green
   }
 </code></pre>
          <div>
-         <div style="position: absolute; top: -40px; right: 10px; 
+         <div style="position: absolute; top: -20px; right: 40px; 
            background-color: yellow; color:black">
           Up here
          </div>
-       <div style="position: absolute; bottom: -40px; left:60px; 
+       <div style="position: absolute; bottom: -20px; left:60px; 
          background-color: green">
           Down here
          </div>
@@ -195,7 +185,7 @@
        </section>
        <section>
        <h3>Z-index</h3>
-         <p class="left-align">When you use positioning to move elements out of the normal flow of content, elements can overlap. You can change the order of overlapping with z-index.</p>
+         <p class="left-align">When positioned elements overlap others, use "z-index" to define "who's on top".</p>
          <p class="left-align">The element with highest z-index goes on top.</p>
 <pre><code class ="html">
   .bottom{
@@ -203,6 +193,7 @@
     bottom: 10px; 
     left:60px; 
     background-color: yellow;
+    z-index: 1;		
   }
 </code></pre>
 <pre><code class ="html">
@@ -220,9 +211,7 @@
           background-color: green; z-index: 2; "> Top </div>
        </section>
        <section>
-       	<h3>Let's Develop it!</h3>
-       	<p>Let's add some positioning.</p>
-       	<p>Let's create a div that contains an image and a caption, and position the caption absolutely overtop the image.</p>
+       	<h3>Let's see a demo!</h3>
        	
        </section>
        <!-- Float-->
@@ -230,10 +219,10 @@
          <h3>Float</h3>
          <div class = "left-align">
           	<ul>
-          	<li>"Floating" an element takes it in the normal flow, as far to the left or right of it's containing element as possible.</li>
-          	<li>Any other elements, such as paragraphs or lists, will wrap around the floated element.</li>
-          	<li>Always specify a width when floating an element, otherwise the element is likely to take up the whole page and not appear floated.</li>
-            <li>You can specify a) whether an element is floated or not, and b) which side it ﬂoats on.</li>
+          	<li>"Floating" an element causes it to move left or right till it bumps against another element or its container.</li>
+          	<li>Elements below it will "rise up" to fill the space it vacated.</li>
+          	<li>Inline elements and text will make room for the floated element by wrapping.</li>
+
           	</ul>
          </div>
        </section>
@@ -252,33 +241,34 @@
     background:yellow;
   }
 </code></pre>
-        <div style ="float:left; text-align: left;width:200px;background:yellow; color:black; padding: 10px;">
+        <div style ="float:left; text-align: left;width:200px;background:yellow; color:black; padding: 10px; margin-right: 10px;">
           <small>Hi, I'm a yellow box with black text.<br/>
           I like to hang out on the left side.</small><br/>
         </div>
-        <div class = "left-align">Not floating element</div>
-        <div class = "left-align">Not floating element</div>
-         <div class = "left-align">Not floating element with wrapping Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
+        <div class = "left-align">Inline content wraps around the</div>
+        <div class = "left-align">floated div. The parent div</div>
+         <div class = "left-align">containing the inline content occupies all the space behind the "float". The inline content moves over to make room.</div>
        </section>
        
        <section>
        <h3>Using floats to place elements side by side</h3>	
-       <p>If you want two block level elements to be side by side, you need to float both elements. One left, and one right.</p>
+       <p>If you want two block elements to be side by side:</p>
+				<ul>
+					<li>float both elements.</li>				
+					<li>give them the same "float" value.</li>
+					<li>give them widths.</li>				
+				</ul>					
        <img src="images/example-float-column.png" />
        </section>
        <!-- Clear-->
        <section>
          <h3>Clear</h3>
          <ul>
-         <li>Clearing tells the element on which side (right, left, both) other elements <strong>cannot</strong> appear. </li>
-         <li>If you had an image floated left, and you did not want the paragraph to appear next to it, you would add <strong>clear: left;</strong> to the paragraph.</li>
-         <li>Clearing both sides makes sure ﬂoats don’t ﬂow past the clear element.</li>
+         <li>The "clear" property tells the element not to "rise up" behind the floated div.<br /><br /></li>
+				 <li class="fragment">"Clear: right" tells the element not to rise up behind a right-floated element.<br /><br /></li>
+				 <li class="fragment">"Clear: left" tells the element not to rise up behind a left-floated element.<br /><br /></li> 
+				 <li class="fragment">There is also "clear: both" and "clear: none"</li>				 
          </ul>
-<pre><code class = "html">
-  clear: right;
-  clear: left;
-  clear: both;
-</code></pre>
        </section> 
        
        <section>
@@ -298,15 +288,26 @@
            hi<br/>
            hi<br/>
          </div>
-         <div class = "left-align">Not floating element</div>
-         <div class = "left-align">Not floating element</div>
-         <div class = "left-align" style="clear: left;">Non-floating element with a class of <strong>.clear-left</strong></div>
+         <div class = "left-align">This element has no clear property.</div>
+         <div class = "left-align">This element has no clear property.</div>
+         <div class = "left-align" style="clear: left;">This element has a class of <strong>.clear-left</strong></div>
         </section>
-        
+
+      <section>
+					<p>Floated elements and the elements around them often behave unexpectedly!<br /><br /></p>
+				<ul>
+            <li class="fragment">Floated elements get "hung up" underneath others.<br /><br /></li>
+            <li class="fragment">If all the contents of a div are floated, the div collapses.<br /><br /></li>
+			<li class="fragment">A div that "rises up" below a floated div will sometimes leave its content stuck below.</li>
+				</ul>	
+				</section>
+				<section>
+				<p><br /><br />Despite its shortcomings, the "float" property is used extensively.<br /><br />For a good slideshow explaining floats, go to: <em class="green">http://www.slideshare.net/maxdesign/css-floats-explained</em>
+</p>
+				</section>					
         <!-- Exercise-->
        <section>
-         <h3>Let's Develop It</h3>
-         <p>Let's float our side bar and content areas.</p>
+         <h3>Let's Demo It</h3>
        </section>       <!-- Question-->
         <section>
           <h2>Questions?</h2>

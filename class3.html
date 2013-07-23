@@ -147,13 +147,26 @@
 				 <p class="fragment green"><em>hint: sidebars are a good place for lists.</em></p>
 				 <p class="fragment green"><em>hint: for a footer, add a "copyright" with your name and the year to the bottom of your page.</em></p>				 
         </section> 
-       
+         <section>
+        	<h3>Review</h3>
+        <p class = "left-align fragment">Selectors: Pseudo selectors and Compound selectors</p>
+        <p class = "left-align fragment">Styling Colors and Fonts</p>
+        <p class = "left-align fragment">Attaching CSS: Inline, Embedded and Linked</p>
+        </section>
+         <section>
+        	<h3>Review continued</h3>
+        <p class = "left-align fragment">Parts of a webpage: header, footer, sidebar and main content</p>
+        <p class = "left-align fragment">The &lt;div> element</p>
+        <p class = "left-align fragment">The box model</p>
+        </section>	       
         <!-- Box model-->
         <section>
           <h3>Box Model</h3>
           <img src ="images/box-model.png"/>
         </section>
-        
+		<section>
+       	<h3>Padding, Borders, and Margins</h3>
+        </section>	             
         <!-- Padding -->
         <section>
           <h3>Padding</h3>
@@ -166,45 +179,47 @@
           <p>Adds to the total width of the box.</p>
           <img src ="images/box-model-padding.png"/>
         </section>
-        
-        <section>
+		<section>
           <h3>Padding</h3>
-          15 pixels on all sides
+					<p>To make the padding on all sides the same, use the "padding" property and one value</p>
 <pre><code class ="html">
 padding: 15px;
 </code></pre>
-          10 pixels on top only
+     <p>Or you can style the sides individually</p>
 <pre><code class ="html">
 padding-top: 10px;
 </code></pre>
-          10 on top, 5 on right, 3 on bottom, 5 on left
+</section>
+<section>
+          <h3>Padding shorthand</h3>
+<p>You can also use shorhand to style the sides in one declaration</p>
 <pre><code class ="html">
 padding: 10px 5px 3px 5px;
 </code></pre>  
-        </section>
-       
-        <section>
-          <h3>Padding</h3>
-          <p>Four values<p>
-<pre><code class = "html">
-  padding: top right bottom left;
-</code></pre>
-          <p>Two values</p>
-<pre><code class = "html">
-  padding: top/bottom right/left;
-</code></pre>
-          <p>One value</p>
-<pre><code class = "html">
-  padding: all;
-</code></pre>
-        </section>
-       
-        <section>
-          <h3>Padding</h3>
+<p> is the same as: </p>
 <pre><code class ="html">
-  padding: 10px 20px 30px 40px;
-</code></pre>
-        <img src ="images/box-model-padding2.png"/>
+padding-top: 10px;
+padding-right: 5px;
+padding-bottom: 3px;
+padding-left: 5px;
+</code></pre>  
+<p>The order is: top right bottom left</p>
+        </section>
+       
+        <section>
+          <h3>Padding Shorthand</h3>
+          <p>If the top and bottom padding are the same, and the left and right are the same, you can use two values:<p>
+<pre><code class ="html">
+padding: 30px 50px;
+</code></pre>  
+<p> is the same as: </p>
+<pre><code class ="html">
+padding-top: 30px;
+padding-right: 50px;
+padding-bottom: 30px;
+padding-left: 50px;
+</code></pre>  
+<p>The order is:  top/bottom right/left</p>
         </section>
        
         <!-- Border-->
@@ -213,33 +228,43 @@ padding: 10px 5px 3px 5px;
           <p>The edge around the box, specified as "thickness, style, color."</p>
           <img src ="images/box-model-border.png">
         </section>
-        
         <section>
-          <h3>Border</h3>
+          <h3>Borders</h3>
+					<ul>
+					<li>border-width</li>
+					<li>border-style</li>
+					<li>border-color</li>
+					</ul>
+					<p class="left-align">Example: </p>
+<pre><code class ="html">
+  border-width: 10px;
+  border-style: dashed;
+  border-color: #666666;
+</code></pre>
+</section>
+        <section>
+          <h3>Border style shorthand</h3>
+          <p>You can specify each property separately, or all three together.</p>
           <p>A solid red border</p>
 <pre><code class = "html">
   border: 1px solid #ff0000;
-</code></pre>
+</code></pre>					
+        </section>        
+        <section>
+          <h3>Border style shorthand</h3>
+          <p>You can specify separate styles for the top, left, right or bottom border</p>
           <p>A thick dotted black top border</p>
 <pre><code class ="html">
   border-top: 4px dotted #000000;
 </code></pre>
-          <p>Two diﬀerent border styles</p>
+          <p>Two different border styles</p>
 <pre><code class ="html">
   border-top: 1px solid #ff0000;
   border-bottom: 4px dotted #000000;
 </code></pre>
         </section>
        
-        <section>
-          <h3>Border - Other Properties</h3>
-<pre><code class ="html">
-  border-width: 10px;
-  border-style: dashed;
-  border-color: #666666;
-</code></pre>
-          <p>You can specify each property separately, or all three together.</p>
-        </section>
+
        
         <!-- Margin -->
         <section>
@@ -249,21 +274,46 @@ padding: 10px 5px 3px 5px;
         </section>
         
         <section>
-          <h3>Margin</h3>
-          <p>15 pixels on all sides</p>
-<pre><code class = "html">
-  margin: 15px;
-</code></pre>
-          <p>10 on top, 5 on right, 3 on bottom, 5 on left</p>
+          <h3>Margins</h3>
+					<p>Styled just like padding!</p>
 <pre><code class ="html">
-  margin: 10px 5px 3px 5px;
+margin: 15px;
 </code></pre>
-          <p>10 pixels on top</p>
-<pre><code class = "html">
-  margin-top: 10px;
-</code></pre>
-        </section>
-        
+     <p>Or you can style the sides individually</p>
+<pre><code class ="html">
+margin-top: 10px;
+</code></pre>	
+</section>	
+<section>		
+          <h3>Margin shorthand</h3>
+<p>Same as padding!</p>
+<pre><code class ="html">
+margin: 10px 5px 3px 5px;
+</code></pre>  
+<p> is the same as: </p>
+<pre><code class ="html">
+margin-top: 10px;
+margin-right: 5px;
+margin-bottom: 3px;
+margin-left: 5px;
+</code></pre>  
+<p>The order is: top right bottom left</p>
+ </section>
+<section>
+         <h3>Margin Shorthand</h3>
+          <p>Like padding, if the top and bottom margin are the same, and the left and right are the same, you can use two values:<p>
+<pre><code class ="html">
+margin: 30px 50px;
+</code></pre>  
+<p> is the same as: </p>
+<pre><code class ="html">
+margin-top: 30px;
+margin-right: 50px;
+margin-bottom: 30px;
+margin-left: 50px;
+</code></pre>  
+<p>The order is:  top/bottom right/left</p> 
+</section>
         <section>
           <h3>Auto Margin</h3>
           <p>If a margin is set to auto on a box that has width, it will take up as much space as possible.</p>
@@ -279,34 +329,22 @@ padding: 10px 5px 3px 5px;
   width: 300px;
 </code></pre>
         </section>
-        
-        <!-- Exercise-->
-        <!-- Exercise -->
 		<section>
-			<h3>Let's Develop it!</h3>
-			<p>Let's add some padding, borders, and margins to our divs.</p>
-			<p>Let's center our entire document in the browser.</p>
-		</section>
-        <!-- Width-->
-		<section>
-			<h3>Property: Width</h3>
-			<p>Sets the width of an element.</p>
-			<p>Does not include padding or borders, remember these add to the width.</p>
+			<h3>Width and height</h3>
+			<p class="green">width: 600px;</p>
+			<p>Sets the width of an element to 600px.<br /><br /></p>
+			<p class="green">height: 300px;</p>
+			<p>Sets the height of an element to 300px.<br /><br /></p>
+				<p>These only refer to the content area. Padding and border will add to the height and/or width.</p>
 		</section>
 		<!-- height-->
 		<section>
-			<h3>Property: Height</h3>
-			<p>Sets the height of an element.</p>
-			<p>Does not include padding or borders, remember these add to the height.</p>
+			<h3>Let's take a look at a demo!</h3>
+			<p>of padding, borders, margins, widths and heights.</p>
 		</section>
+        <!-- Width-->
+
 		<!-- Exercise -->
-		<section>
-			<h3>Let's develop it!</h3>
-			<div class="left-align">
-				<p>Add a width &amp; height to our divs.</p>
-				<p>Use IDs to target each div with CSS</p>
-			</div>
-		</section>
         <section>
           <h2>Questions?</h2>
           <div style = "font-size:1200%; height:100%; margin-top:30%" class ="blue">?
