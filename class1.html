@@ -63,10 +63,11 @@
           <div class = "left-align">
           <p class = "blue">Tell us about yourself.</p>
           <ul>
-            <li>Who are you?</li>
+            <li><p>Who are you?</p></li>
+            <li><p>On a scale of 1 to 10, how much do you know about HTML?</p>
+						<blockquote class="blue"><span style="text-decoration: underline">1</span> meaning 'It's a completely foreign language' to <span style="text-decoration: underline">10</span> meaning 'I can almost code my own website'.</blockquote>
+								</li>
             <li>What do you hope to get out of the class?</li>
-            <li>What is your favorite dinosaur?</li>
-            <img src="images/dinosaur.jpeg" />
           </ul>
           </div>
         </section>
@@ -74,14 +75,15 @@
         <!-- What is HTML?-->
         <section>
           <h3>What is HTML?</h3>
-          <p>HTML is the language your browser speaks.</p><p>To tell the browser how to "render" (display) a web page, we have to learn to speak HTML!</p>
+          <p>HTML is the language your browser speaks.</p><p>To tell the browser how we want it to "render" (display) our website, we have to learn to speak HTML!</p>
+					<img height="300" src="images/computer_question_mark.jpg" />
         </section>
 				
         <section>
           <h3>Let's get started!</h3>
           <ul class="no_bullets">
             <li class = "fragment">&lt;!DOCTYPE html&gt;</li>
-            <li class = "fragment">&lt;html&gt;</li>
+            <li class = "fragment">&lt;html&gt;<br /><br /><br /><br /><br /><br /></li>
             <li class = "fragment">&lt;/html&gt;</li>
           </ul>
         </section>
@@ -91,55 +93,62 @@
           <ul class="no_bullets">
             <li>&lt;!DOCTYPE html&gt;</li>
             <li>&lt;html&gt;</li>
-			<li class = "fragment">&lt;head&gt;</li>
-			<li class = "fragment">&lt;/head&gt;</li>
-			<li class = "fragment">&lt;body&gt;</li>
-			<li class = "fragment">&lt;/body&gt;</li>						
+			<li class = "fragment">&nbsp;&nbsp;&nbsp;&nbsp;&lt;head&gt;<br /><br /></li>
+			<li class = "fragment">&nbsp;&nbsp;&nbsp;&nbsp;&lt;/head&gt;</li>
+			<li class = "fragment">&nbsp;&nbsp;&nbsp;&nbsp;&lt;body&gt;</li>
+			<li class = "fragment"><br /><br /><br /><br /><br />&nbsp;&nbsp;&lt;/body&gt;</li>						
             <li>&lt;/html&gt;</li>
           </ul>
         </section>
 				
         <section>
-         <h3>Add a title and a heading ... </h3>				
+         <h4>Add a title between the "head" tags... </h4>				
          <ul class="no_bullets">
             <li>&lt;!DOCTYPE html&gt;</li>
             <li>&lt;html&gt;</li>					
-			<li>&lt;head&gt;</li>
-			<li class = "fragment">&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;</li>
-			<li class = "fragment">&nbsp;&nbsp;&nbsp;&nbsp;&lt;/title&gt;</li>					
-			<li>&lt;/head&gt;</li>
-			<li>&lt;body&gt;</li>
-			<li class = "fragment">&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;</li>
-			<li class = "fragment">&nbsp;&nbsp;&nbsp;&nbsp;&lt;/h1&gt;</li>
-			<li>&lt;/body&gt;</li>			
+			<li>&nbsp;&nbsp;&nbsp;&nbsp;&lt;head&gt;</li>
+			<li class = "fragment">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;<span class="fragment blue">My Web Page!</span><span class="fragment">&lt;/title&gt;</span></li>
+			<li>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/head&gt;</li>
+			<li>&nbsp;&nbsp;&nbsp;&nbsp;&lt;body&gt;</li>
+			<li><br /><br /><br /><br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;/body&gt;</li>			
             <li>&lt;/html&gt;</li>
           </ul>
         </section>
-
-       <section>
-        <h3>Add some content... </h3>						 
+        <section>
+         <h4>Add a heading between the "body" tags ... </h4>				
          <ul class="no_bullets">
             <li>&lt;!DOCTYPE html&gt;</li>
             <li>&lt;html&gt;</li>					
-			<li>&lt;head&gt;</li>
-			<li>&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;</li>
-			<li class = "fragment">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;My Very First Web Page!</li>
-			<li>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/title&gt;</li>					
-			<li>&lt;/head&gt;</li>
-			<li>&lt;body&gt;</li>
-			<li>&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;</li>
-			<li class = "fragment">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hello World!</li>
-			<li>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/h1&gt;</li>
-			<li>&lt;/body&gt;</li>			
+			<li>&nbsp;&nbsp;&nbsp;&nbsp;&lt;head&gt;</li>
+			<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;<span class="blue">My Web Page!</span>&lt;/title&gt;</li>
+			<li>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/head&gt;</li>
+			<li>&nbsp;&nbsp;&nbsp;&nbsp;&lt;body&gt;</li>
+			<li class = "fragment">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;<span class="fragment blue">Hello World!</span><span class="fragment">&lt;/h1&gt;</span></li>
+			<li><br /><br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;/body&gt;</li>			
+            <li>&lt;/html&gt;</li>
+          </ul>
+        </section>
+       <section>
+        <h4>Now add a paragraph... </h4>						 
+         <ul class="no_bullets">
+            <li>&lt;!DOCTYPE html&gt;</li>
+            <li>&lt;html&gt;</li>					
+			<li>&nbsp;&nbsp;&nbsp;&nbsp;&lt;head&gt;</li>
+			<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;<span class="blue">My Web Page!</span>&lt;/title&gt;</li>
+			<li>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/head&gt;</li>
+			<li>&nbsp;&nbsp;&nbsp;&nbsp;&lt;body&gt;</li>
+			<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;<span class="blue">Hello World!</span>&lt;/h1&gt;</li>
+			<li class = "fragment">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;<span class="fragment blue">Meet your new web designer!</span><span class="fragment">&lt;/p&gt;</span></li>			
+			<li><br /><br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;/body&gt;</li>			
             <li>&lt;/html&gt;</li>
           </ul>
         </section>
 				
         <section>
           <h3>Now save your page and give it a name ... </h3>
-          <p>index.html</p>
-         <p class="fragment">Open it up in a browser, view your masterpiece, and give yourself a pat on the back!</p>
-          <h3 class="fragment">You have just created your first web page!</h3>				 
+          <p><br />index.html</p>
+         <p class="fragment"><br />Open it up in a browser, view your masterpiece, and give yourself a pat on the back!</p>
+          <h3 class="fragment"><br />You have just created a web page!</h3>				 
         </section>
 				
         <section>
@@ -185,7 +194,7 @@
 				            <li class = "fragment">HTML 4 in 1997-1998
 				<ul>
 					<li class = "fragment">Standardized by w3 Consortium (pack of super nerds)</li>				
-					<li class = "fragment">This was a year after CSS (Cascading Style Sheets) was introduced.</li>
+					<li class = "fragment">Pages still had very little styling options that would work in every browser.</li>
 					<li class = "fragment">Plenty of table-based layouts around!</li>
 				</ul>		
 			</li>
@@ -214,31 +223,22 @@
         <section>
          <h3>Who uses HTML?</h3>
          <ul class="no_bullets">
-           <li> <span class="green">Web designers:</span>
-				<ul>
-					<li>Plan, design and create (usually) small-scale websites.<br /><br /></li>
-				</ul>
-			</li>
-			<li><span class = "green">Web developers:</span>
-				<ul>
-					<li>Involved in programming dynamic web applications or large sites.
-						<ul>
-							<li><span class = "green">Front-end web developers:</span>
+						<li class="fragment"><span class="green">Web designers:</span>
+							<ul>
+								<li>Plan, design and create (usually) small-scale websites.<br /><br /></li>
+							</ul>
+						</li>
+						<li class="fragment"><span class = "green">Front-end web developers:</span>
 								<ul>
-									<li>Responsible for the user experience on large sites (client-side).</li>
+									<li>Involved in programming dynamic web applications or large sites.
+										<ul>
+											<li class="fragment">Responsible for the user experience on large sites (client-side).</li>
+											<li class="fragment">Differ from <span class = "green">Back-end web developers</span>, who are responsible for handling and storing data and server file structure (server-side).</li>
+										</ul>
+									</li>
 								</ul>
-							</li>
-							<li><span class = "green">Back-end web developers:</span>
-								<ul>
-									<li>Responsible for handling and storing data and server file structure (server-side),</li>
-									<li class="fragment">(But these folks don't really use HTML).</li>
-								</ul>
-							</li>
-						</ul>
-				   </li>
-				</ul>
-			</li>
-         </ul>
+						</li>
+					</ul>
         </section>
         
         <!-- Nitty gritty 1 - Clients and servers -->
@@ -279,7 +279,6 @@
 				<li>DreamWeaver - Windows or Mac</li>
 				<li>Microsoft Expression</li>
 				<li>Microsoft Visual Studio</li>
-				<li>Aptana &mdash; Falls somewhere between Text Editor and Web Development App.</li>
 			</ul>			 
         </section>
 
@@ -331,21 +330,20 @@
           <h3>HTML and CSS</h3>
           <p class = "blue left-align">HTML:</p>
           <ul>
-			<li class ="fragment">Came first (about 7 years before CSS)</li>
-			<li class ="fragment">Provides logical structure to the content (paragraphs, headings, tables, etc.)</li>
-			<li class ="fragment">Browser's default settings provides rudimentary "style" (spacing, font size, etc.)</li>
-			<li class ="fragment">Before CSS, some additional "styles" were applied with HTML. <em>This is now considered very bad coding!</em></li>			
+			<li class="fragment">Came first (about 7 years before CSS).</li>
+			<li class="fragment">Provides logical structure to content (words and images) by organizing it into paragraphs, headings, tables, etc.</li>
+			<li class="fragment">Browser's default "styles", like spacing and font size, are just enough to make the structure apparent (if not appealing).</li>
+			<li class="fragment">Before CSS, some additional "styles" were applied with HTML. <em>This is now considered very bad coding!</em></li>			
 		  </ul>
         </section>	
         <section>
           <h3>HTML and CSS</h3>
           <p class = "blue left-align">CSS:</p>
           <ul>
-			<li class ="fragment">CSS stands for Cascading Style Sheets</li>		  
-			<li class ="fragment">Took a while to get websites and browsers to adopt</li>
-			<li class ="fragment">The purpose is to remove all styles from HTML and keep them separate</li>
-			<li class ="fragment">Very flexible and powerful style sheet language that allows websites to look the way they do today</li>
-			<li class ="fragment">Describes how you want your site look &mdash; presentation-wise</li>			
+			<li class ="fragment">CSS stands for Cascading Style Sheets.</li>		  
+			<li class ="fragment">CSS was invented to remove all styles from HTML and keep them separate.</li>
+			<li class ="fragment">Very flexible and powerful language that allows websites to look the way they do today.</li>
+			<li class ="fragment">Describes how you want your site look &mdash; presentation-wise.</li>			
 		  </ul>	
         </section>
         
@@ -353,118 +351,138 @@
           <h3>HTML and CSS</h3>
           <div class = "yellow"> Concrete example</div>
           <ul>
-            <li class ="fragment"><p>A paragraph is your <em class="green">content</em></p></li>
-            <li class = "fragment"><p>Putting your content into an HTML tag to make it look like a paragraph is <em class="green">structure</em></p>
-              <pre><code class ="html">
-                &lt;p>A paragraph is your content&lt;/p>
-              </code></pre>
+            <li class ="fragment"><p>Words that make up a paragraph are <em class="green">content.</em></p></li>
+            <li class = "fragment"><p>Putting opening and closing paragraph tags around words create <em class="green">structure.</em></p>
+						<p><span class="green">&lt;p></span>Words within a paragraph.<span class="green">&lt;/p></span><br /></p>
           </li>
-          <li class = "fragment"><p>Make the font of your paragraph yellow and 50px using CSS is presentation:</p>
-            <p class ="yellow" style="font-size:50px;">A paragraph is your content</p>
+          <li class = "fragment"><p>Making the font bigger and yellow using CSS is presentation:</p>
+            <p class ="yellow" style="font-size:50px;">Words within a paragraph.</p>
           </li>
         </section>
         
         <!-- HTML element-->
         <section>
-         <h3>Elements and Tags</h3>
-		 <p class="fragment left-align">Every HTML element is defined by a <em class="yellow">tag</em>.</p>
-         <p class="fragment left-align">Syntax is important!</h3>
-            <h3><span class="fragment">&lt;</span><span class = "fragment">p</span><span class = "fragment">&gt;</span></h3>
+         <h3>HTML Element</h3>
+			 <p class="fragment left-align">An element is usually composed of content (words, images, numbers, or even other elements), and <span class="yellow">HTML tags</span>.</p>
+		 <p class="fragment left-align">We create elements by "wrapping" chunks of content inside an opening <em class="yellow">tag</em> and a matching closing <em class="yellow">tag</em>.</p>
+		 <p class="fragment">Example: <br /><span class="yellow">&lt;p></span>Words within a paragraph.<span class="yellow">&lt;/p></span><br /></p>
+		 </section>
+        <section>
+		 <p class="left-align">Some elements have no content, just <em class="yellow">tags</em>. We call these <em class="yellow">empty elements</em>.</p> 
+		 <p class="fragment">(More on that later...)</p>
+		 </section>		 
+        <section>
+         <h3>Syntax is important!</h3>
+            <h2><span class="fragment">&lt;</span><span class = "fragment">p</span><span class = "fragment">&gt;</span></h2>
 			<p class="fragment">Content goes here.</p>
             <h3><span class="fragment">&lt;</span><span class = "fragment">/</span><span class = "fragment">p</span><span class = "fragment">&gt;</span></h3>
 			<p class = "fragment">HTML is <em>case-insensitive</em> but the accepted convention is to use lower-case (except for the doctype element).</p>		 
-		 </section>
+		 </section>		 
 		 <section>
         <h3>Container Elements</h3>		 		 
-		 <p class="fragment left-align">If the element contains content (called a <em class="yellow">container element</em>), it includes an <em class="yellow">opening</em> and a <em class="yellow">closing</em> tag.</p>
-		 <p class="fragment left-align">Commonly used container elements:</p>
-		 <ul class="fragment"> <li>&lt;p> (paragraph)</li><li> &lt;h1> (heading levels 1 - 6)</li><li> &lt;table> (table)</li><li> &lt;ul> (unordered list)</li><li> &lt;ol> (ordered list)</li><li> &lt;li> (list item)</li><li> &lt;div> (division)</li><li> &lt;a> (link)</li></ul>
-		 <p class="fragment left-align">Go to http://www.w3schools.com/tags/default.asp for a full list of elements</p>
+		 <p class="fragment left-align">Container elements contain content along with an <em class="yellow">opening</em> and a <em class="yellow">closing</em> tag.</p>
+		 <div class="fragment">
+		 <p>Commonly used container elements:</p>
+		 <ul> <li>&lt;p> (paragraph)</li><li> &lt;h1> (heading levels 1 - 6)</li><li> &lt;table> (table)</li><li> &lt;ul> (unordered list)</li><li> &lt;ol> (ordered list)</li><li> &lt;li> (list item)</li><li> &lt;a> (link)</li></ul>
 		 </section>
 		 
         <section>		
          <h3>Empty Elements</h3>		 
-		 <p class="fragment left-align">If the element does <em class="yellow">not</em> contain content, it is said to be an <em class="yellow">empty element</em></p>
-		 <p class="fragment left-align">Three ways to write empty elements:</p>
+		 <p class="fragment left-align">If the element does <em class="yellow">not</em> contain content, it is said to be an <em class="yellow">empty element</em>.</p>
+		 <p class="fragment left-align">"<span class="yellow">&lt;br&gt;</span>" is an <em class="yellow">empty element</em> that tells the browser to insert a line break in a sentence.</p>
+		 <div class="fragment">
+		 <p class = "left-align">It can be written three different ways:</p>
 		 <ul>
-		 <li class="fragment">&lt;br>&lt;/br></li>
-		 <li class="fragment">&lt;br /></li>	
-		 <li class="fragment">&lt;br></li>
+		 <li>&lt;br>&lt;/br> <em class="green">(open and close tag, no content)</em></li>
+		 <li>&lt;br /> <em class="green">(<span class="yellow">self-closing</span> tag)</em></li>	
+		 <li>&lt;br> <em class="green">(just an opening tag)</em></li>
 		 </ul>
-		 <p class="fragment left-align">The <em class="yellow">self-closing</em> tag syntax is required in XHTML. It is still recommended for clarity.</p>	
+		 </div>
+		 <br />
+		 <p class="fragment left-align">The first or second are required in XHTML.</p>	
 		 </section>
 		 
         <section>		
          <h3>Empty Elements</h3>		 
-		 <p class="fragment left-align">Commonly used empty elements:</p>		 
-		 <ul class="fragment left-align"><li>&lt;br /> (break tag)</li><li>&lt;img /> (image tag)</li><li>&lt;input /> (form input)</li><li>&lt;button /> (form button)</li><li>&lt;hr /> (horizontal rule)</li></ul>
+		 <p>Commonly used empty elements:</p>		 
+		 <ul class="left-align"><li>&lt;br /> (break tag)</li><li>&lt;img /> (image tag)</li><li>&lt;input /> (form input)</li><li>&lt;button /> (form button)</li><li>&lt;hr /> (horizontal rule)</li></ul>
 		 </section>
-		 
-		 <section>
-        <h3>How many elements are there in our page so far?</h3>						 
+        <!-- Nesting-->
+<section>
+        <h4>How many elements are in our page so far?</h4>						 
          <ul class="no_bullets">
             <li>&lt;!DOCTYPE html&gt;</li>
             <li>&lt;html&gt;</li>					
-			<li>&lt;head&gt;</li>
-			<li>&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;</li>
-			<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;My Very First Web Page!</li>
-			<li>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/title&gt;</li>					
-			<li>&lt;/head&gt;</li>
-			<li>&lt;body&gt;</li>
-			<li>&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;</li>
-			<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hello World!</li>
-			<li>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/h1&gt;</li>
-			<li>&lt;/body&gt;</li>			
+			<li>&nbsp;&nbsp;&nbsp;&nbsp;&lt;head&gt;</li>
+			<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;My Web Page!&lt;/title&gt;</li>				
+			<li>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/head&gt;</li>
+			<li>&nbsp;&nbsp;&nbsp;&nbsp;&lt;body&gt;</li>
+			<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Hello World!&lt;/h1&gt;</li>
+			<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Meet your new web designer!&lt;/p&gt;</li>
+			<li>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/body&gt;</li>			
             <li>&lt;/html&gt;</li>
           </ul>
         </section>
-		
+        <section>
+          <h3>Nesting</h3>
+          <p class="fragment left align">All elements "nest" inside other elements...except the HTML element! (every thing else nests inside <em>it</em>)</p>
+<p class="fragment left-align">Your "p" element nests inside your "body" element, which nests inside your "html" element.<br /><br /></p>
+<p class="fragment left-align">Whichever element OPENS first CLOSES last!</p>					
+
+          
+ 
+        </section>
+        <section>
+          <h3>Be a good nester!</h3>				
+		<p class="fragment left-align">If you consistently indent your code, you will avoid "bad nesting"!</p>		  
+          <img src = "images/owls.jpg"/>
+</section>
         <section>
         <h3>Doctype:</h3>
-        <p>The ﬁrst tag on an HTML page is the <em>doctype</em>, which tells the browser which version of the markup language the page is using.</p>
-        <pre><code class = "html">
-          &lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML
+        <p class="left-align">The ﬁrst element on an HTML page. It tells the browser which version of HTML the page is using.</p><br />
+        <p class="fragment left-align">Here's the old way of writing it:<p>
+         <p class="fragment green"> &lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML
           4.01 Transitional//EN" "http://
-          www.w3.org/TR/html4/loose.dtd">
-        </code></pre>
-        <pre><code class = "html">
-          &lt;!DOCTYPE html>
-        </code></pre>
+          www.w3.org/TR/html4/loose.dtd"></p>
+<br /><br />
+        <p class="fragment left-align">Now we can write it this way:<p>
+          <p class="fragment green">&lt;!DOCTYPE html></p>
         </section>
 		
         <section>
-          <h3>HTML Tag: The second tag</h3>
-          <p>After &lt;DOCTYPE>, the page content must be
-          contained between &lt;html> tags.</p>
-          <pre><code class = "html">
-            &lt;!DOCTYPE html>
-            &lt;html>
-
-            &lt;/html>
-          </code></pre>
+          <h3>HTML Element</h3>
+          <p class="left-align">After <span class="yellow">&lt;DOCTYPE></span>, the very next element on every page is the <span class="yellow">html</span> element. Its opening and closing <span class="yellow">&lt;html></span> tags wrap around all the rest.</p>
+					<br />
+					<ul class="fragment no_bullets">
+           <li class="yellow">&lt;!DOCTYPE html&gt;</li>
+            <li class="yellow">&lt;html&gt;<br /></li>	
+            <li>&nbsp;&nbsp;&nbsp;&nbsp;Everything else goes in here!</li>
+<li>&nbsp;&nbsp;&nbsp;&nbsp;...</li>						
+						<li class="yellow">&lt;/html&gt;<br /></li>							
+					</ul>
         </section>
 
         <section>
-          <h3>Head and Body Tags</h3>
+          <h3>Head and Body Elements</h3>
           <div class = "left-align">
-            <p class="fragment left-align"><span class="green">Head:</span> Contains the title, meta tags, embedded styles, and often scripts.</p>
-			<ul><li class="fragment left-align">Meta information is not visible to the user, but tells search engines about your page, who created it, and a description. </li></ul>
-			<p class="fragment left-align">The contents of the head tag are not visible on the web page...except the title</p>
-            <p class="fragment left-align"><span class="green">Body:</span> Contains the actual content of the page. Everything that is contained in the body is visible to the user.</p>
+            <p class="fragment left-align"><span class="green">Head:</span> Contains the title, meta information, embedded styles, and often scripts.</p>
+			<ul><li class="fragment left-align"><span class="green">Meta information</span> is not visible to the user, but tells search engines about your page, who created it, and other info.</li></ul>
+			<p class="fragment left-align">The contents of the head element are not visible on the web page...except the title!</p>
+            <p class="fragment left-align"><span class="green">Body:</span> Contains the actual content of the page. This is the part of your page that visitors see and interact with.</p>
           </div>
         </section>
         <section>
-          <h3>Headings</h3>
+          <h3>Heading Elements</h3>
           <div>
           <div class = "left" style = "width:50%">
-<pre><code>
-  &lt;h1>Heading 1&lt;/h1>
-  &lt;h2>Heading 2&lt;/h2>
-  &lt;h3>Heading 3&lt;/h3>
-  &lt;h4>Heading 4&lt;/h4>
-  &lt;h5>Heading 5&lt;/h5>
-  &lt;h6>Heading 6&lt;/h6>
-</code></pre>
+<ul class="no_bullets">
+  <li><span class="green">&lt;h1></span>Heading 1<span class="green">&lt;/h1></span></li>
+  <li><span class="green">&lt;h2></span>Heading 2<span class="green">&lt;/h2></span></li>
+  <li><span class="green">&lt;h3></span>Heading 3<span class="green">&lt;/h3></span></li>
+  <li><span class="green">&lt;h4></span>Heading 4<span class="green">&lt;/h4></span></li>
+  <li><span class="green">&lt;h5></span>Heading 5<span class="green">&lt;/h5></span></li>
+  <li><span class="green">&lt;h6></span>Heading 6<span class="green">&lt;/h6></span></li>
+</ul>
           </div>
           <div class = "left" style = "width:50%">
             <h1 style = "font-size: 120%">Heading 1</h1>
@@ -485,64 +503,54 @@
        <section>
         	<h3>Paragraphs</h3>
 		<ul><li class="fragment">Very common and very useful!</li>
-		<li class= "fragment">&lt;p>This is a one-sentence paragraph&lt;/p></li>
+		<li class= "fragment"><span class="green">&lt;p></span>This is a one-sentence paragraph<span class="green">&lt;/p></span></li>
 		</ul>
         </section>	
        <section>
           <h3>Line Breaks</h3>
           <div>
-          <div class = "left" style = "width:50%">
-<pre><code>
-&lt;p>
-  Imagine there's no Heaven &lt;br/>
-  It's easy if you try &lt;br/>
-  No hell below us  &lt;br/>
-  Above us only sky
-&lt;/p>
-</code></pre>
-          </div>
-          <div class = "left left-align" style = "width:50%">
-            <p>
-            Imagine there's no Heaven <br/>
-            It's easy if you try <br/>
-            No hell below us  <br/>
-            Above us only sky
-            </p>
-          </div>
-          <div class ="clear"></div>
-          <br/>
-          <br/>
+          <div class = "left">
+<p class="left-align">
+<span class="green">&lt;p></span><br />
+  Imagine there's no Heaven <span class="green">&lt;br/></span><br />
+  It's easy if you try <span class="green">&lt;br/></span><br />
+  No hell below us  <span class="green">&lt;br/></span><br />
+  Above us only sky<br />
+<span class="green">&lt;/p></span>
+</p>
           </div>
         </section>		
         <section>
           <h3>Lists</h3>
           <div>
-          <div class = "left" style = "width:50%">
-<pre><code>
-  &lt;ul>
-    &lt;li>List Item&lt;/li>
-    &lt;li>AnotherList Item&lt;/li>
-  &lt;/ul>
-</code></pre>
-<pre><code>
-  &lt;ol>
-    &lt;li>List Item&lt;/li>
-    &lt;li>AnotherList Item&lt;/li>
-  &lt;/ol>
-</code></pre>
+          <div class = "left" style = "width:50%; font-size: .9em;">
+<p class="left-align">
+  <span class="green">&lt;ul></span><br />
+    &nbsp;&nbsp;<span class="green">&lt;li></span>List Item<span class="green">&lt;/li></span><br />
+    &nbsp;&nbsp;<span class="green">&lt;li></span>Another List Item<span class="green">&lt;/li></span><br />
+  <span class="green">&lt;/ul></span>
+</p>
+<br />
+<p class="left-align">
+  <span class="green">&lt;ol></span><br />
+    &nbsp;&nbsp;<span class="green">&lt;li></span>List Item<span class="green">&lt;/li></span><br />
+    &nbsp;&nbsp;<span class="green">&lt;li></span>Another List Item<span class="green">&lt;/li></span><br />
+  <span class="green">&lt;/ol></span>
+</p>
           </div>
           <div class = "left" style = "width:50%">
             <p>Unordered list (bullets)
             <ul>
               <li>List Item</li>
-              <li>AnotherList Item</li>
+              <li>Another List Item</li>
             </ul>
             <br/>
             <br/>
+											<br />
             <p>Ordered list (sequence)
             <ol>
               <li>List Item</li>
-              <li>AnotherList Item</li>
+              <li>Another List Item</li>
             </ol>
           </div>
           <div class ="clear"></div>
@@ -559,29 +567,29 @@
 
         <section>
           <h3>Tables</h3>
-          <p>Tables are a way to represent complex information in a grid format.</p>
-          <p>Tables are made up of rows and columns.</p>
-          
+          <p class="left-align">Tables present data (information) in a grid format. They're built row by row, so they're very hard to edit/update.</p>        
           <div>
-          <div class = "left" style = "width:50%">
-<pre><code>
-&lt;table>
-  &lt;tr> 
-    &lt;th>Head&lt;/th>
-    &lt;th>Head&lt;/th>
-  &lt;/tr>
-  &lt;tr> 
-    &lt;td>Data&lt;/td>
-    &lt;td>Data&lt;/td>
-  &lt;/tr>
-&lt;/table>
-</code></pre>
-          </div>
-          <div class = "left left-align" style = "width:50%">
+          <div class = "left" style = "width:50%; font-size: .8em;">
+					<br />
+<p class="left-align">
+  <span class="green">&lt;table></span><br />
+  <span class="green">&nbsp;&nbsp;&lt;tr></span><br />	
+    &nbsp;&nbsp;&nbsp;&nbsp;<span class="green">&lt;th></span>Column Heading<span class="green">&lt;/th></span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span class="green">&lt;th></span>Column Heading<span class="green">&lt;/th></span><br />
+  <span class="green">&nbsp;&nbsp;&lt;/tr></span><br />	
+  <span class="green">&nbsp;&nbsp;&lt;tr></span><br />		
+    &nbsp;&nbsp;&nbsp;&nbsp;<span class="green">&lt;td></span>data<span class="green">&lt;/td></span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span class="green">&lt;td></span>data<span class="green">&lt;/td></span><br />
+  <span class="green">&nbsp;&nbsp;&lt;/tr></span><br />			
+  <span class="green">&lt;/table></span>
+</p>
+ <br /> <br />
+ </div>
+  <br /> <br />         <div class = "left left-align" style = "width:50%">
             <table style="border: 1px solid">
               <tr> 
-                <th style="border: 1px solid">Head</th>
-                <th style="border: 1px solid">Head</th>
+                <th style="border: 1px solid">Column Heading</th>
+                <th style="border: 1px solid">Column Heading</th>
               </tr>
               <tr> 
                 <td style="border: 1px solid">Data</td>
@@ -601,178 +609,138 @@
         </section>
         <section>
         	<h3>Let's develop it!</h3>
-        	<p>Let's add a paragraph to our web page.<br /><br /></p>
-			<ul class="no_bullets">
-				<li>&lt;body&gt;</li>
-				<li>&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;</li>
-				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hello World!</li>
-				<li>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/h1&gt;</li>
-				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;</li>
-				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Your paragraph will go here.</li>
-				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/p&gt;</li>
-				<li>&lt;/body&gt;</li>
-			</ul>
-			<br /><br />
-			<p class="fragment left-align">Now add a list.</p>
+        	<p>Add paragraphs, lists, headings and tables to your web page.<br /><br /></p>
+        	<p>Use my example and the content you brought today to flesh out your page!<br /><br /></p>
         </section>       		
        <section>
         	<h3>Block-level vs. Inline Elements</h3>
 			<p class="fragment green left-align">Block-level:</p>
 			<ul>
 				<li class="fragment">So far we've just talked about block-level elements.</li>			
-				<li class="fragment">Start on a new line.</li>
+				<li class="fragment">Block level elements begin on a new line, and their default width is usually the width of the browser!</li>
 				<li class = "fragment">Browsers give them default padding on top and bottom.</li>
-				<li class = "fragment">Examples are paragraphs, headings, lists, list items, tables and forms.<br /><br /></li>
-			</ul>
+				</ul>
+			</section>
+			<section>
+        	<h3>Block-level vs. Inline Elements</h3>						
+				<p class="left-align">Commonly used block-level elements:<br /><br />
+				<span class="green">&lt;h1></span> thru <span class="green">&lt;h6></span> (headings)<br />
+				<span class="green">&lt;ol></span> and <span class="green">&lt;ul></span> (lists)<br />
+				<span class="green">&lt;li></span> (list items)<br />
+				<span class="green">&lt;table></span> (tables)<br />
+				<span class="green">&lt;form></span> (forms)</p>
 			</section>
        <section>
         	<h3>Block-level vs. Inline Elements</h3>			
 			<p class="fragment green left-align">Inline:</p>	
 			<ul>			
-				<li class="fragment">Do not start on a new line.</li>
-				<li class="fragment">Must be nested inside a block-level element.</li>
-				<li class = "fragment">Examples are images, links, abbreviations, and elements used to format text.</li>
+				<li class="fragment">Inline elements do not start on a new line and their default width is only as wide as their contents.</li>
+				<li class="fragment">They must be nested inside a block-level element.</li>
 			</ul>
+	</section>
+	<section>
+	        	<h3>Block-level vs. Inline Elements</h3>			
+				<p class="left-align">Commonly used inline elements:<br /><br />
+				<span class="green">&lt;img></span> (images)<br />
+				<span class="green">&lt;a></span> (links or "anchors")<br />
+				<span class="green">&lt;em></span> (emphasize)<br />
+				<span class="green">&lt;strong></span> (make strong)<br />
+				<span class="green">&lt;span></span> (has no effect by itself)</p>
+	</section>
+	<section>
+				<h3>"Deprecated" (obsolete) elements:</h3>
+				<p class="fragment left-align"> Deprecated elements are elements that have been phased out and will eventually no longer be supported by browsers.</p><br />
+				<p class="fragment left-align">Examples:<br /><span class="green">&lt;i></span> (italicize)<br />
+				<span class="green">&lt;b></span> (bold)</p><br /><br />	
+		  <p class="fragment left-align">&lt;i> and &lt;b> both "style" the content so they are discouraged in favor of using CSS.</em></p>				
         </section>		
         <!-- Em and Strong-->
         <section>
-          <h3>Inline Elements</h3>
-		  <p class="left align fragment">Elements that format text:</p>
-		  <ul>
-			<li class="fragment">&lt;em> (emphasize)</li>
-			<li class="fragment">&lt;i> (italicize)</li>
-			<li class="fragment">&lt;strong> (make strong)</li>
-			<li class="fragment">&lt;b> (make bold)</li>		  
-			<li class="fragment">&lt;span> (has no effect by itself)</li>
-		</ul>
-		</section>  
-		<section>
-		<h3>&lt;em> vs &lt;i></h3>
-          <div>
-			<div>
-				<pre><code>
-&lt;p>Here is a paragraph with &lt;em>emphasized&lt;/em> text and &lt;i>italicized&lt;/i> text.&lt;/p>
-				</code></pre>
-			</div>
-			<ul class="no_bullets">
-				<li>
-				  <p class="small">Here is a paragraph with <em class="yellow">emphasized</em> text and <i class="yellow">italicized</i> text.</p>
-				</li>
-			</ul>
-		</section>
-		<section>
-		<h3>&lt;strong> vs &lt;b></h3>
-			          <div>
-			<div>
-				<pre><code>
-&lt;p>Here is a paragraph with &lt;strong>Important&lt;/strong> text and &lt;b>bold&lt;/b> text.&lt;/p>	
-				</code></pre>
-			</div>
-			<ul class="no_bullets">
-				<li>
-				 <p class="small">Here is a paragraph with <span class="yellow"><strong>important</strong></span> text and <span class="yellow"><b>bold</b></span> text.</p>
-				</li>
-			</ul>
-			</section>
-       <section>
-			<h3>&lt;em> vs &lt;i></h3>
-			<h3>&lt;strong> vs &lt;b><br /><br /></h3>		   
-          <p>Which should you use?</p>
-		  <p class="fragment">It depends on the context.</p>
+        	<h3>Span Element</h3>
+<p class="fragment left-align">&lt;span> has no other purpose than to provide a "hook" to text that can't be otherwise targeted.</p><br />
+<p class="fragment left-align">Most often used for styling or scripting.</p><br />
+<p class="fragment left-align">By itself, has no visible or interactive affect on content.</p><br />
 
-        </section>
-        <section>
-        	<h3>&lt;span></h3>
-			<ul>
-				 <li>&lt;span> has no other purpose than to provide a "hook" to text that can't be otherwise targeted.<br /><br /></li>
-				 <li>Most often used for styling or scripting.<br /><br /></li>
-				 <li>By itself, has no visible or interactive affect on content.<br /><br /></li>
-				 </ul>
-			          <div>
-			<div>
-				<pre><code>
-&lt;p>Here is a paragraph with &lt;span>span tags&lt;/span> in the middle.&lt;/p>	
-				</code></pre>
-			</div>
-			<ul class="no_bullets">
-				<li>
-				 <p class="small">Here is a paragraph with <span>span tags</span> in the middle.</p>
-				</li>
-			</ul>				 
+<p class="fragment left-align">
+<span class="green">&lt;p></span>Here is a paragraph with <span class="green">&lt;span></span>span tags<span class="green">&lt;/span></span> in the middle.<span class="green">&lt;/p></span>	
+				</p>
         </section>
         <section>
         	<h3>Let's develop it!</h3>
-        	<p>Let's add <em class="green">inline</em> elements to our web page.</p>
+        	<p>Select a couple of words or phrases in your content that could be emphasized and put <em class="green">&lt;em></em> and <em class="green">&lt;strong></em> tags around them.</p>
         </section>		
         <!-- Link Attributes -->
-		
-
-       <section>
-        	<h3>Links and Images</h3>
-        	<p class="fragment">Both require <em class="green">attributes</em> to tell the browser more information.</p>
-        </section>		
 		<section>
-			<h3>Attributes:</em></h3>
-			<ul class="no_bullets">
-			<li class="fragment">Attributes "describe" the element (provide additional information).
-			<li class="fragment">Attributes are followed by <em class="yellow">values</em>.<br />
-				<ul class="blue"><li class="fragment"><em>think ~ person: hair = "brown"</em></li></ul></li>			
-			<li class="fragment">Attributes are always placed inside an opening tag, before the right angle bracket.</li><li><br /><h3 class="fragment">Syntax:</li>
-            <li><span class="fragment">&lt;</span><span class = "fragment">a </span><span class = "fragment">href </span><span class = "fragment">= </span><span class = "fragment">"</span><span class = "fragment">http://girldevelopit.com</span><span class = "fragment">"</span><span class = "fragment">&gt;</span><span class = "fragment">Girl Develop It</span><span class = "fragment">&lt;/a&gt;</span></li>
-			</ul>
-		</section>
+			<h3>Attributes</h3>
+       	<p class="fragment left-align">Two important elements of web pages &mdash; links and images &mdash; require <em class="green">attributes</em>.</p>			
+			<p class="fragment left-align">Attributes are components of an elements (just like eyes are components of a human).
+			<p class="fragment left-align">You describe an attribute by using a <em class="yellow">value</em> (like saying "Her eyes are brown").<p>
+				<p class="blue fragment left-align"><em>think ~ person: eyes = "brown"</em></p>						
+			</section>
+			<section>
+			<h3>Attributes</h3>	
+				
+			<p class="left-align">For example:<br />Links require an <em class="green">href attribute</em> to tell where they link to (<em class="green">href</em> stands for <em class="green">"hypertext reference"</em>).</p>
+			
+			<p class="fragment left-align">Here's how that looks:<br />
+			&lt;a <span class="green">href = "http://www.girldevelopit.com"</span>></p>
+			<p class="blue fragment left-align"><em>think ~ person:  address = "123 Main Street"</em></p>
+			<p class="fragment left-align">Attributes are always placed inside an opening tag, before the right angle bracket.</p>			
+</section>
         <section>
           <h3>Links</h3>
-          <p class="left-align">Links have three components:</p>
+        <p class="left-align">The <span class="green">&lt;a&gt;</span> (anchor) tag surrounds text or images to turn them into links.</p>	
+					<div class="fragment">
+          <p class="left-align">Links have two mandatory components:</p>
           <ul>
             <li>tag: &lt;a>&lt;/a></li>
             <li>href attribute: "http://www.girldevelopit.com"</li>
-            <li>alt attribute: "Girl Develop It"<br /><br /></li>
-          </ul>
-<p class="fragment green left-align">&lt;a href ="http://www.girldevelopit.com" title = "Girl Develop It Homepage"><span style="color:white">Girl Develop It</span>&lt;/a><br /><br /></p>
-        <p class="fragment">The &lt;a&gt; tag surrounds text or images to turn them into links.</p>
+            <li class="left-align fragment">A third component, the <span class="green">title</span> attribute, should only be used if the link's destination isn't obvious (like clicking on an image)</li>
+						</ul></div>
+<br /><br />
+<p class="fragment green left-align">&lt;a href ="http://www.girldevelopit.com"><span style="color:white">Girl Develop It</span>&lt;/a><br /><br /></p>
+
         </section>
 		
         <section>
         	<h3>Link continued...</h3>
 
-        	<p class="fragment">Using <em class="green">target="_blank"</em> causes the link to open in a new window/tab<br /><br /></p>
+        	<p class="fragment">Using <em class="green">target="_blank"</em> causes the link to open in a new window/tab.<br /><br /></p>
 			<p class="fragment">example: <span class="green">&lt;a href="home.html" target="_blank"></span>Link Text<span class="green">&lt;/a></span><br /><br /></p>			
         	<!-- Change email to fit your chapter's needs-->
-			<p class="fragment">Inserting <em class="green">mailto:some_email_address.com</em> into the href attribute causes the link to open the default mail client<br /><br /></p>
+			<p class="fragment">Inserting <em class="green">mailto:some_email_address.com</em> into the href attribute causes the link to open the default mail client.<br /><br /></p>
 			<p class="fragment">example: <span class="green">&lt;a href="mailto:info@girldevelopit.com"></span>E-mail us!<span class="green">&lt;/a></span></p>
  
 
         </section>
         <section>
         	<h3>Let's develop it!</h3>
-        	<p>Let's add a link within our paragraph.</p>
-        	<p>Link to the Girl-Develop-It website!<br /><br /></p>
-<p class="fragment green left-align">&lt;a href ="http://www.girldevelopit.com" title = "Girl Develop It Homepage"><span style="color:white">Girl Develop It</span>&lt;/a><br /><br /></p>
+        	<p>Within your content, add a link to the Girl-Develop-It website!<br /><br /></p>
+<p class="green left-align">&lt;a href ="http://www.girldevelopit.com"><span style="color:white">Girl Develop It</span>&lt;/a><br /><br /></p>
         </section>       		
          <section>
-          <h3>Element: Image</h3>
-<p class="fragment green">&lt;img src ="http://girldevelopit.com/assets/pink-logo.png" alt = "Girl Develop It Logo"/><br /><br /></p>		  
+          <h3>Image Element</h3>
+<p class="fragment left-align"> &lt;img> is an empty element. It is also an inline element.<br /><br /></p>					 
           <p class="fragment left-align">Image elements have three components</p>
           <ul>
             <li class="fragment">Tag: &lt;img/></li>
             <li class="fragment">Src attribute: "http://girldevelopit.com/assets/pink-logo.png"</li>
             <li class="fragment">Alt attribute: "Girl Develop It logo"<br /><br /></li>
           </ul>
-<p class="fragment left-align"> &lt;img> is an empty element. It is also an inline element.<br /><br /></p>	
+<p class="fragment green">&lt;img src ="http://girldevelopit.com/assets/pink-logo.png" alt = "Girl Develop It Logo"/><br /><br /></p>		  
 
         </section>
-       <section>
-        	<h3>Adding an image to a website</h3>
-        	<p>In a minute, we'll be adding an image to our page, but first</p>
-        	<h3 class="fragment">Let's do some filing!</h3>
-        </section>
+        <section>
+        	<h3>Let's develop it!</h3>
+        	<p>Add the Girl Develop It logo to your webpage by putting this code somewhere in a paragraph or heading!<br /><br /></p>
+<p class="green">&lt;img src ="http://girldevelopit.com/assets/pink-logo.png" alt = "Girl Develop It Logo"/></p>		  
+        </section>				
 		<section >
 			<h3>Good Housekeeping: Managing Files and Folders</h3>
-			<p class="left-align fragment">Create a top level folder and put your index.html document inside. This is your "site root folder".<br /><br /></p>
-			<p class="left-align fragment">Inside, next to index.html, create a new folder called "styles".<br /><br /></p>
-			<p class="left-align fragment">Create another folder next to "styles" called "images". Copy your images into the "images" folder.<br /><br /></p>
-			<p class="left-align fragment">Now you have images in a folder, but you need to tell the browser where they are!</p>
+			<p class="left-align fragment">Create a new folder on your laptop's desktop and drag your index.html document into it. This is your "site root folder".</p><br />
+			<p class="left-align fragment">Inside, next to index.html, create a new folder called "styles". This is where your CSS styles will go.</p><br />
+			<p class="left-align fragment">Create another folder next to "styles" called "images". This is where all your images will go.</p><br />
+			<p class="left-align fragment">Copy your image and paste it in the "images" folder.</p>			
 		</section>		
         <!-- relative & absolute links -->
         <section>
@@ -795,9 +763,7 @@
         		<li><strong class="blue">Relative:</strong>
         			<ul>
    					<li class = "fragment">Refer to a local file in your site root folder<br /><code class="blue">src = "images/myimage.jpg"</code></li>					
-        				<li class = "fragment">Relative paths change depending upon the page the link is on.</li>
         				<li class = "fragment">Describes the location of the file relative to the file you're in.</li>
-						<li class = "fragment">The current file is your "starting point"</li>
         				<li class = "fragment">Think ~ using the "directions" feature on MapQuest.<br /><br /></li>
         			</ul>
         		</li>
@@ -809,7 +775,7 @@
 			<p class="fragment left-align">If the file is in the same folder: <br /><span class="fragment green">kitty.jpg</span></p>
 			<p class="fragment left-align">If the file is in a folder on the same level you're on: <br /><span class="fragment green">images/kitty.jpg</span></p>
 			<p class="fragment left-align">If the file is in a folder that's one level above: <span class="fragment green">../images/kitty.jpg</span></p>
-			<p class="fragment left-align">If the file is in a folder at the top and you are buried several folders deep: <br /><span class="fragment green"> /images/kitty.jpg</span></p>			
+			<p class="fragment left-align">Or to go straight up to the top-level folder: <br /><span class="fragment green"> /images/kitty.jpg</span></p>			
 		</section>		
         <!-- Lets develop it-->
         
@@ -817,32 +783,22 @@
 
        <section>
         	<h3>Let's Develop It</h3>
-        	<p>Let's add that image to our site!</p>
-        	<p>You'll be using the image you just put in your images folder and linking to it using a relative path.</p>
-			<p class="fragment green left-align">&lt;img src ="images/your_image_name.jpg" alt = "describe your image"/><br /><br /></p>	
-			<p class="fragment left-align">Replace <em class="green">"your_image_name.jpg"</em> with the name and file type of your image.</p>		
+        	<p>Let's add one of your own images to your page!</p>
+        	<p>Make sure your image is inside the "images" folder you created. Then link to it using a relative path.</p>
+			<p class="green left-align">&lt;img src ="images/your_image_name.jpg" alt = "describe your image"/><br /><br /></p>	
+			<p class="left-align">Replace <em class="green">"your_image_name.jpg"</em> with the name and file type of your image.</p>		
         </section>	
 
        <section>
         	<h3>Writing Clean Code</h3>
         	<p class="fragment">1. Nest your tags properly!</p>
+        	<p class="fragment">2. Make good use of white space!</p>
+        	<p class="fragment">3. Leave yourself notes!</p>					
 
         </section>		
 
 
-        <!-- Nesting-->
-        <section>
-          <h3>Nesting</h3>
-          <p class="fragment left align">All elements "nest" inside other elements...except the HTML element! (every thing else nests inside <em>it</em>)</p>
-		<p class="fragment left-align">If you consistently indent your code, you will avoid "bad nesting"!</p>		  
-          <img src = "images/owls.jpg"/>
-          
- 
-        </section>
-        <section>
-          <h3>For example:</h3>
-          <p class="fragment left-align">Your "a" element nests inside your "p" element, which nests inside your "body" element which nests inside your "html" element.<br /><br /></p>
-<p class="fragment left-align">Whichever element OPENS first CLOSES last!</p>	  
+	  
         </section>				
         
         <!--example of nesting -->
@@ -851,26 +807,26 @@
         <!-- Paragraphs-->
         <section>
           <h3>2.  Make good use of white space!</h3>
-		  <p>Browsers don't care about white space</p>
+		  <p class="left-align">Browsers don't care about white space</p><br />
           <div>
-          <div class = "left" style = "width:50%">
-<pre><code>
-  &lt;p>Paragraph 1&lt;/p>
-  &lt;p>Paragraph 2&lt;/p>
-  &lt;p>Paragraph 3&lt;/p>
-</code></pre>
-<pre><code>
-  &lt;p>Paragraph 1&lt;/p> &lt;p>Paragraph 2&lt;/p>  &lt;p>Paragraph 3&lt;/p>
-</code></pre>
-<pre><code>
-  &lt;p>Paragraph 1&lt;/p> 
-  
-  
-  &lt;p>Paragraph 2&lt;/p>  
-  &lt;p>Paragraph 3&lt;/p>
-</code></pre>
+          <div class = "fragment left" style = "width:50%">
+<p class="left-align" style="border: 1px solid white"><small>
+  &lt;p>Paragraph 1&lt;/p><br />
+  &lt;p>Paragraph 2&lt;/p><br />
+  &lt;p>Paragraph 3&lt;/p></small>
+</p><br />
+<p class="left-align" style="border: 1px solid white"><small>
+  &lt;p>Paragraph 1&lt;/p>&nbsp;&lt;p>Paragraph 2&lt;/p>&nbsp;&lt;p>Paragraph 3&lt;/p></small>
+</p><br />
+<p class="left-align" style="border: 1px solid white"><small>
+  &lt;p>Paragraph 1&lt;/p><br />
+ <br /> 
+<br />  
+  &lt;p>Paragraph 2&lt;/p><br />  
+  &lt;p>Paragraph 3&lt;/p></small>
+</p>
           </div>
-          <div>
+          <div class="fragment">
           <p>Paragraph 1</p>
           <p>Paragraph 2</p>
           <p>Paragraph 3</p>
@@ -883,18 +839,18 @@
           <h3>3. Leave yourself notes!</h3>
         	<p class="fragment">You can add comments to your code. The browser ignores them, but <em>you</em> (or another coder) can see them.<br /><br /></p>
 
-<p class="fragment green">&lt;!-- Comment goes here --><br /><br /></p>
+<p class="fragment"><span class="green">&lt;!--</span> Comment goes here <span class="green">--></span></p>
         </section>
 
         <!--Comments-->
         <section>
         	<p>Use them to organize your code:</p>
- <ul class="fragment no_bullets">
+ <ul class="no_bullets">
 <li class="green">&lt;!-- Beginning of header --></li>
 <li>   &lt;div id="header">Header Content &lt;/div></li>
 <li class="green">&lt;!-- End of header --><br /><br /></li>
 </ul>
-<p> Or 'comment out' code (to hide it from the browser):</p>
+<p class="fragment"> Or 'comment out' code (to hide it from the browser):</p>
  <ul class="fragment no_bullets">
 <li class="green">&lt;!--   </li>
 <li>  &lt;ol></li>
