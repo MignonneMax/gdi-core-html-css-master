@@ -1,0 +1,36 @@
+h1 {
+	color: blue;
+	background-color: yellow;
+}
+
+#intro {
+  color: blue;
+}
+
+.warning {
+ color: red;
+}
+
+a:link {
+       color: blue;
+}
+
+a:visited {
+	 color: yellow;
+}
+
+a:hover {
+	 color: green;
+}
+
+a:active {
+	 color: purple;
+}
+
+#intro a {
+  font-style: italic;
+}
+
+h1 {
+   font: italic bold 34px Corbel,'Helvetica Neue', Helvetica, Arial, sans-serif;
+}

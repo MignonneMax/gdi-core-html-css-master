@@ -1,5 +1,5 @@
 #outer-wrap {
-	width: 800px;
+	width: 85%px;
 	height: 800px;
 	border: 1px solid black;
 	overflow: hidden;
@@ -11,6 +11,9 @@
 	width: 100px;
 	height: 100px;
 	background-color: white;
+	padding: 15px;
+	margin: 35px;
+	border: 5px dashed purple;
 }
 
 #box_a {
@@ -18,10 +21,11 @@
 	height: 300px;
 	border: 20px solid pink;
 	background-color: green;
+	margin: 15px;
 	}
 	
 #box_b {
-	width: 300px;
+	width: 75%;
 	height: 300px;
 	border: 20px solid blue;
 	background-color: yellow;

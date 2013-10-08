@@ -46,28 +46,25 @@
         <!-- Role of HTML v. CSS-->
         <section>
           <h3>CSS</h3>
-          <div class = "blue"> Your Content</div>
-          <div><span class = "blue">+ HTML: </span>Structure</div>
-          <div><span class = "blue">+ CSS: </span>Presentation</div>
-          <div class = "blue">= Your Website<br /><br /></div>
-          <p class = "fragment">With CSS you specify colors, position, fonts, borders, spacing and many many other effects.</p>
+					<p>Stands for <span class="emphasize">C</span>ascading <span class="emphasize">S</span>tyle <span class="emphasize">S</span>heets.</p><br />
+					<p class="fragment">Refers to the hierarchical way that styles get applied to html elements.</p>
+
         </section>
           <section>
         	<h3>What we'll learn today</h3>
  <ul>
- <li class="fragment">A little CSS history</li>
- <li class="fragment">Terminology and syntax</li>
- <li class="fragment">Selectors</li>
- <li class="fragment">Defining Colors and Fonts</li>
- <li class="fragment">How to attach CSS to your web page</li>
+ <li class="fragment">A little CSS history.</li>
+ <li class="fragment">Terminology and syntax.</li>
+  <li class="fragment">Ways to attach CSS to your page.</li>
+ <li class="fragment">Selectors.</li>
+ <li class="fragment">Colors and Fonts.</li>
  </ul>
         </section>      
         <!-- What is CSS-->
         <section>
           <h3>History of CSS</h3>
-          <p>CSS = <span class="green">C</span>ascading <span class="green">S</span>tyle <span class="green">S</span>heets</p>
           <ul>
-            <li class = "fragment">The 90s
+            <li>The 90s
 				<ul>
 					<li class = "fragment">HTML pages read from top to bottom, black font, no color, and all default browser styles.</li>
 					<li class = "fragment">Fine for science papers, but designers said "We Want More!"</li>
@@ -102,7 +99,7 @@
 					<li class = "fragment">2004: The working draft becomes a candidate for adoption by the W3C. It reverts back to working draft in 2005.</li>
 					<li class = "fragment">2007: The working draft again becomes a candidate for adoption by the W3C</li>				
 					<li class = "fragment">2010: It reverts back to a working draft.</li>
-					<li class = "fragment">2011: June 7th, it is finally published as the W3C recommendation.</li>
+					<li class = "fragment">2011: June 7th, CSS2.1 is finally "sanctified" by the W3C.</li>
 				</ul>
 			</li>			
           </ul>
@@ -156,7 +153,7 @@
         	<img src="images/cssrule.png" alt="The CSS Rule" style="border: none; box-shadow: none;"/>
        </section>		
          <section>
-					<h3>Stynax is important!</h3>
+					<h3>Syntax is important!</h3>
 			<ul class="no_bullets">
 			<li>h1 &#123;</li>
 			<li>&nbsp;&nbsp;color: blue;</li>
@@ -170,16 +167,105 @@
 			<li class="fragment">Don't forget the closing curly bracket!</li>			
 			</ul>
         </section>
+        <!-- Connecting HTML to CSS-->
+        <section>
+          <h3>Attaching CSS to your web page</h3>
+          <p class = "green left-align fragment">There are three ways</p>
+					<ul>
+          <li class="fragment">Inline</li>
+          <li class="fragment">Embedded</li>
+          <li class="fragment">Linked</li>
+					</ul>
+        </section>
+      
+        <!-- Inline -->
+        <section>
+          <h3>Inline</h3>
+
+  <p class="green">&lt;p style="color: red;"><span style="color:white">Some text.</span>&lt;/p><br /><br ></p>
+          <p class="left-align fragment">The style goes right inside the opening HTML tag.</p>
+          <p class="left-align fragment">Uses "style", which is an HTML attribute.</p>
+          <p class="left-align fragment">Difficult to use in large projects.</p>
+        </section>
         
+        <!-- Embedded -->
+        <section>
+          <h3>Embedded</h3>
+<p class="fragment">This is how we did it in our opening exercise.<br /><br /></p>
+		<ul>
+          <li class="fragment">"Embedded" inside the &lt;head> element between an opening and closing &lt;style> tag.<br /><br /></li>
+		</ul>
+          <p class="left-align fragment">If styles are identical across multiple pages in your site -- you'd have to copy and paste for each page.</p>
+        </section>
+        
+        <!-- External-->
+        <section>
+          <h3>Linked</h3>
+					<p class="fragment left-align">All your styles go on their own style sheet!</p>
+					<p class="fragment left-align">A &lt;link> tag in your HTML file points to the location of the style sheet</p>
+		  <ul class="fragment no_bullets">
+			<li>&lt;head&gt;</li>
+			<li>&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;</li>
+			<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;My Very First Web Page!</li>
+			<li>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/title&gt;<br /><br /></li>	
+			<li class="fragment green">&nbsp;&nbsp;&nbsp;&nbsp;&lt;link rel="stylesheet" type="text/css"<br />&nbsp;&nbsp;&nbsp;&nbsp;href="style.css"&gt;<br /><br /></li>	
+			<li>&lt;/head&gt;</li>
+		</ul>
+		</section>
+		<section>
+		          <h3>Advantages of linked (external) style sheets:</h3>
+				<ul>			
+          <li class="fragment">Shared resource for several pages.</li>
+          <li class="fragment">Reduced ﬁle size &amp; bandwidth</li>
+          <li class="fragment">Easy to maintain in larger projects.</li>
+					</ul>
+        </section>
+      
+        <!-- Exercise-->
+        <section>
+          <h3>Let's code it (part 1)</h3>
+          <ol>
+            <li class="fragment">Open a new page in your text editor.<br /><br /></li>
+            <li class="fragment">Copy the rule you created between the style tags on your index.html (not the tags themselves, though).<br /><br /></li>
+            <li class="fragment">Paste it in your new page.<br /><br /></li>
+            <li class="fragment">Save your page inside the "styles" folder you created earlier. Name it "styles.css".<br /><br /></li>
+
+          </ol>
+        </section>
+        <section>
+          <h3>Let's code it (part 2)</h3>
+          <ol start="5">
+						<li class="fragment">Delete the style tags and everything within them on your index.html page.<br /><br /></li>
+            <li class="fragment">In their place, code the following:<br /><br />
+							<span class="green">&lt;link rel="stylesheet" type="text/css" href="styles/styles.css"></span><br /><br /></li>
+
+            <li class="fragment">Save your index.html page and open it in a browser.<br /><br /></li>
+						</ol>
+            <p class="fragment green">Does the style still show on your page?</p>
+          </ol>
+        </section>				        
         <!-- CSS Syntax -->
 
         <!-- Selectors elements-->
         <section>
+			  <h3>Selectors</h3>
+				<ul>
+				<li class="fragment">The first item in a style rule.</li>
+				<li class="fragment">Describes what is being styled.</li>
+				</ul><br /><br />
+			<ul class="no_bullets fragment">
+			<li><span class="blue">h1</span> &#123;</li>
+			<li>&nbsp;&nbsp;color: blue;</li>
+			<li>&nbsp;&nbsp;background-color: yellow;</li>
+			<li>&#125;<br /><br /></li>
+</ul>				
+				</section>				
+        <section>
 			  <h3>What can we use as selectors?</h3>
 				<ul>
-				<li class="fragment">HTML tags</li>
-				<li class="fragment">Classes and ids</li>
-				<li class="fragment">Pseudo classes</li>
+				<li class="fragment">HTML tags.</li>
+				<li class="fragment">Classes and ids.</li>
+				<li class="fragment">Pseudo classes.</li>
 				<li class="fragment">Any combination of the above!</li>
 				</ul>
 				</section>
@@ -255,47 +341,11 @@
 <li class="fragment">In your HTML, class and id names are in quotes (just like all other attribute values).<br /><br /></li>
 </ul>
 </section>
-         <section>
-        	<h3>CSS Review</h3>
-        <p class = "left-align fragment">A little CSS history</p>
-        <p class = "left-align fragment">Terminology and syntax<br />
-         	<img src="images/cssrule.png" alt="The CSS Rule" style="border: none; box-shadow: none;"/></p>
-</section>
 <section>
- <h3>Review: Selectors</h3>
-<p class = "left-align fragment">You can use:</p>
-<ul class="fragment">
-<li>HTML tags</li>
-<li>Classes and ids</li>
-<li>Pseudo classes</li>
-<li>A combination of the above</li>
-</ul>
-</section>
-<section>
-<ul>
- <h3>Review: Classes and IDs</h3>
 
-        <p class = "left-align fragment">
-          <span class = "yellow">Class:</span>  Lots of elements can have the same class.</p>
-        <p class = "left-align fragment">&lt;span class="warning"&gt;</p>				
-<ul class="fragment no_bullets">
-						<li class= "blue">.warning &#123;</li>
-			<li class= "blue">&nbsp;&nbsp;color: red;</li>
-			<li class= "blue">&#125;<br /><br /></li>
-</ul>		
-        <p class = "left-align fragment">
-          <span class = "yellow">ID:</span>  An id can only be used once <em class="yellow">on a page</em>.	
-        <p class = "left-align fragment">&lt;p id="intro"&gt;</p>
-<ul class="fragment no_bullets">
-						<li class= "blue">#intro &#123;</li>
-			<li class= "blue">&nbsp;&nbsp;font-style: italic;</li>
-			<li class= "blue">&#125;</li>
-</ul>			
-         </section>      		     
-<section>
           <h3>Let's code it!</h3>
 		<ul class="no_bullets">
-			<li>Add these rules inside your style tags<br /><br /></li>	
+			<li>Add these rules to your "styles.css" file:<br /><br /></li>	
 			<li class="blue">&nbsp;&nbsp;&nbsp;#intro &#123;</li>
 			<li class="blue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: blue;</li>
 			<li class="blue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#125;<br /><br /></li>
@@ -303,23 +353,23 @@
 			<li class="yellow">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: red;</li>
 			<li class="yellow">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#125;<br /><br /></li>			
 		</ul>	
-<p class="fragment left-align">Add an id of "intro" to your first paragraph<br /><br /></p>
-<p class="fragment left-align">Add two spans with a class of "warning"<br /><br /></p>				
+<p class="fragment left-align">Add an id of "intro" to your first paragraph.<br /><br /></p>
+<p class="fragment left-align">Find a word or sentence in your "index.html" file and wrap in span tags with a class of "warning".<br /><br /></p>				
 			  </section>
 			<section>
 			    <h3>Pseudo Classes</h3>
-			<p class="left-align">Describes a "current condition" of an HTML element, rather than an "attribute"</p>
-			<p class="fragment left-align"><em class="yellow">Link</em> pseudo classes are the most common<br /><br /></p>
+			<p class="left-align">Describes a "current condition" of an HTML element, rather than an "attribute".</p>
+			<p class="fragment left-align"><em class="yellow">Link</em> pseudo classes are the most common</p><br />
 			<p class="fragment left-align">example: <em class="green">a:hover</em> <br /><br />to style a link when user "hovers" over it</p>
 			
 			</section>
 			<section>
 			    <h3>Link Pseudo Classes</h3>			
 			<ul class="no_bullets">
-<li class="fragment blue">a:link <em style="color: white">~unvisited link</em></li>
-<li class="fragment blue">a:visited <em style="color: white">~visited link</em></li>
-<li class="fragment blue">a:hover <em style="color: white">~mouse over link</em></li>
-<li class="fragment blue">a:active <em style="color: white">~selected link</em><br /><br /></li>
+<li class="blue">a:link <em style="color: white">~unvisited link</em></li>
+<li class="blue">a:visited <em style="color: white">~visited link</em></li>
+<li class="blue">a:hover <em style="color: white">~mouse over link</em></li>
+<li class="blue">a:active <em style="color: white">~activated link</em><br /><br /></li>
 </ul>
 <ul>
 <li class="fragment left-align">If present, a:hover <em>must</em> come after a:link and a:visited.</li>
@@ -365,21 +415,17 @@
 		<section>
          <h3>Let's add a compound selector rule!</h3>
 		<ul class="no_bullets">
-			<li>&lt;style&gt;<br /><br /></li>	
 			<li class="blue">&nbsp;&nbsp;&nbsp;#intro a &#123;</li>
 			<li class="blue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;font-style: italic;</li>
 			<li class="blue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#125;<br /><br /></li>
-			<li>&lt;/style&gt;</li>		
 		</ul>		
 			  </section>		
         <!-- Multiple values -->
-        <section>
-        <h3><em class="green">Styling with Color and Fonts</em></h3>
-      </section>
         
         <!-- Color-->
         <section>
-          <h3>Color</h3>
+        <h3><em class="green">Styling with Color and Fonts</em></h3>				
+          <h4 class="left-align">Color</h4>
 					<p class="fragment left-align">The <em class="green">color</em> property sets the color of the font.</p>
 					<p class="fragment left-align">The <em class="green">background-color</em> property sets the color of the background.<br /><br /></p>					
 					<p class="fragment left-align">Color value can be defined in one of three ways:</p>
@@ -421,9 +467,7 @@
         <!-- Font family-->
 <section>
           <h3>Font</h3>
-</section>		
-        <section>
-          <h3>5 different properties to style font!</h3>
+          <h4>5 different properties to style font!</h4>
 		  <ol>
 		  <li class="fragment">font-style
 			<ul class="no_bullets">
@@ -508,84 +552,6 @@
 			<li class="blue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#125;</li>
 		</ul>	
 			  </section>
-        <!-- Connecting HTML to CSS-->
-        <section>
-          <h3>Attaching CSS to your web page</h3>
-          <p class = "green left-align fragment">There are three ways</p>
-					<ul>
-          <li class="fragment">Inline</li>
-          <li class="fragment">Embedded</li>
-          <li class="fragment">Linked</li>
-					</ul>
-        </section>
-      
-        <!-- Inline -->
-        <section>
-          <h3>Inline</h3>
-
-  <p class="green">&lt;p style="color: red;"><span style="color:white">Some text.</span>&lt;/p><br /><br ></p>
-
-          <p class="left-align fragment">Uses "style", which is an HTML attribute</p>
-          <p class="left-align fragment">Difficult to use in large projects</p>
-          <p class="left-align fragment">Not preferred</p>
-        </section>
-        
-        <!-- Embedded -->
-        <section>
-          <h3>Embedded</h3>
-<p class="fragment">This is how we have been doing it in our exercises.<br /><br /></p>
-		<ul>
-          <li class="fragment">"Embedded" inside the &lt;head> element between the &lt;style> tags.<br /><br /></li>
-		</ul>
-          <p class="fragment">But what about styles that are the same throughout your website?</p>
-        </section>
-        
-        <!-- External-->
-        <section>
-          <h3>Linked</h3>
-					<p class="fragment left-align">All your styles go on their own style sheet</p>
-					<p class="fragment left-align">A &lt;link> tag in your HTML file points to the location of the style sheet</p>
-		  <ul class="fragment no_bullets">
-			<li>&lt;head&gt;</li>
-			<li>&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;</li>
-			<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;My Very First Web Page!</li>
-			<li>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/title&gt;<br /><br /></li>	
-			<li class="fragment green">&nbsp;&nbsp;&nbsp;&nbsp;&lt;link rel="stylesheet" type="text/css"<br />&nbsp;&nbsp;&nbsp;&nbsp;href="style.css"&gt;<br /><br /></li>	
-			<li>&lt;/head&gt;</li>
-		</ul>
-		</section>
-		<section>
-		          <h3>Advantages of linked (external) style sheets:</h3>
-				<ul>			
-          <li class="fragment">Shared resource for several pages.</li>
-          <li class="fragment">Reduced ﬁle size &amp; bandwidth</li>
-          <li class="fragment">Easy to maintain in larger projects.</li>
-					</ul>
-        </section>
-      
-        <!-- Exercise-->
-        <section>
-          <h3>Let's code it (part 1)</h3>
-          <ol>
-            <li class="fragment">Open a new page in your text editor<br /><br /></li>
-            <li class="fragment">Copy all the rules between the style tags on your index.html (not the tags themselves, though)<br /><br /></li>
-            <li class="fragment">Paste them on your new page<br /><br /></li>
-            <li class="fragment">Save your page inside the "styles" folder you created earlier. Name it "styles.css".<br /><br /></li>
-
-          </ol>
-        </section>
-        <section>
-          <h3>Let's code it (part 2)</h3>
-          <ol start="5">
-						<li class="fragment">Delete the style tags and everything within them on your index.html page<br /><br /></li>
-            <li class="fragment">Where the styles used to be, code the following:<br /><br />
-							<span class="green">&lt;link rel="stylesheet" type="text/css" href="styles/style.css"></span><br /><br /></li>
-
-            <li class="fragment">Save your index.html page and open it in a browser<br /><br /></li>
-						</ol>
-            <p class="fragment green">Are your styles still there?</p>
-          </ol>
-        </section>				
         
         <!-- Cascading-->
         <section>
