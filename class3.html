@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 
-	<head>
+	<head>
 		<meta charset="utf-8">
 
 		<title>Class 3 ~ HTML/CSS ~ Girl Develop IT</title>
@@ -54,12 +54,12 @@
          <section>
         	<h3>Parts of a web page</h3>
         	<div class="left" style="width: 45%;">
-        		<p class="fragment">Nearly every web page is divided into four parts:</li>
+        		<p>Nearly every web page is divided into four parts:</li>
 						<ul>
-						<li class="fragment">header</li>
-						<li class="fragment">footer</li>
-						<li class="fragment">sidebar</li>
-						<li class="fragment">content area</li>
+						<li>header</li>
+						<li>footer</li>
+						<li>sidebar</li>
+						<li>content area</li>
 						</ul>
         	</div>
         	<div class="right" style="width: 45%;">
@@ -72,27 +72,27 @@
         <!-- Inline v block again-->
 
         <section> 
-        	<h3>Divs</h3>
+        	<h3>The Div Element</h3>
 		
         		<ul>
-	        		<li class="fragment">Divs let us divide web pages into relevant parts &mdash; the 4 main parts and smaller areas, as well.</li>	
-	        		<li class="fragment">With divs, we group elements so they can be styled the same way</li>
+	        		<li>Divs let us organize web content into relevant parts &mdash; the 4 main parts and smaller areas, as well.</li>
+	<li class="left-align fragment">Example: <span class="green">&lt;div id="header"></span></li>							
+	        		<li class="fragment">With divs, we group elements so they can be styled the same way.</li>
 	        		<li class="fragment">We give divs ids and classes so we can style them using CSS.</li>
-        		</ul>
-	<p class="left-align fragment">Example: <span class="green">&lt;div id="header"></span></p>							
+        		</ul>							
 				</section>
 				<section>
         	<h3>Other elements are often nested inside divs</h3>				
-<pre><code>&lt;div>
-   &lt;p>Content&lt;p>
-   &lt;p>Content&lt;p>
-&lt;/div></code></pre>
-<pre><code>&lt;div id="header">
-   &lt;h1>Main Heading&lt;h1>
-&lt;/div></code></pre>
-<pre><code>&lt;div class="sub-content">
-   &lt;p>Some more content&lt;p>
-&lt;/div></code></pre>
+<p class="left-align">&lt;div><br />
+   &nbsp;&nbsp;&lt;p>Content&lt;p><br />
+   &nbsp;&nbsp;&lt;p>Content&lt;p><br />
+&lt;/div></p><br />
+<p class="left-align">&lt;div id="header"><br />
+   &nbsp;&nbsp;&lt;h1>Main Heading&lt;h1><br />
+&lt;/div></p><br />
+<p class="left-align">&lt;div class="sub-content"><br />
+   &nbsp;&nbsp;&lt;p>Some more content&lt;p><br />
+&lt;/div></p><br />
         </section>
   <!-- Div continued-->
         <section>
@@ -106,129 +106,112 @@
         </section> 
         
         <section>
-          <h3>Solution:</h3>
-<p class="left-align">Wrap them in a div tag to style them differently.</p>					
-<pre><code class ="html">
-&lt;div class="special_styles">
-  &lt;p>Lorem ipsum dolor sit amet, consectetur adipisicing elit&lt;/p>
-  &lt;p>Sed do eiusmod tempor incididunt ut labore et dolore.&lt;/p> 
-&lt;/div>
-&lt;p>Magna aliqua. Ut enim ad minim veniam.&lt;/p> 
-&lt;p>Quis nostrud exercitation ullamco.&lt;/a>
-</code></pre>
-
-<pre><code class = "html">
-.special_styles{
-  text-align:right;
-  color: green; 
-  font-style: italic;
-}
-</code></pre>
+<h4 class="left-align">The HTML:</h4>					
+<p class="left-align" style="font-size: 70%;">
+<span class="green">&lt;div class="special_styles"></span><br />
+  &nbsp;&nbsp;&lt;p>Lorem ipsum dolor sit amet, consectetur adipisicing elit&lt;/p><br />
+  &nbsp;&nbsp;&lt;p>Sed do eiusmod tempor incididunt ut labore et dolore.&lt;/p> <br />
+<span class="green">&lt;/div></span><br /><br />
+&lt;p>Magna aliqua. Ut enim ad minim veniam.&lt;/p> <br />
+&lt;p>Quis nostrud exercitation ullamco.&lt;/p><br />
+</p><br />
+<h4 class="left-align">The CSS:</h4>
+<p class="left-align" style="font-size: 70%;">
+<span class="green">&nbsp;&nbsp;&nbsp;.special_styles</span> &#123;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text-align:right;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: green;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;font-style: italic;<br /></li>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#125;<br /><br />
+</p>
+</section>
+<section>
+<h3>The result</h3><br />
 <div style = "text-align:right;font-style: italic; font-size: 70%;" class = "green">
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
   <p>Sed do eiusmod tempor incididunt ut labore et dolore.</p>
 </div>
 <div class = "left-align" style="font-size: 70%;">
 <p>Magna aliqua. Ut enim ad minim veniam.</p>
-<p>Quis nostrud exercitation ullamco.</a>
-
+<p>Quis nostrud exercitation ullamco.</p><br />
+<p class="left-align">
+<span class="green">&nbsp;&nbsp;&nbsp;.special_styles</span> &#123;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text-align:right;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: green;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;font-style: italic;<br /></li>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#125;<br /><br />
+</p>
 </div>
         </section> 
         <section>
           <h3>Let's Develop It</h3>
-         <p class="left-align">Divide your web page into the 4 main parts using &lt;div> tags:</p>
-						<ul>
-						<li>header</li>
-						<li>footer</li>
-						<li>sidebar</li>
-						<li>content</li>
-						</ul>				 
-         <p class="left-align"><br /><br />Give each new div an id with the name that corresponds to its part.</p>
-				 <p class="fragment green"><em>hint: sidebars are a good place for lists.</em></p>
-				 <p class="fragment green"><em>hint: for a footer, add a "copyright" with your name and the year to the bottom of your page.</em></p>				 
+         <p class="left-align">Organize your web page into 4 parts using &lt;div>'s:</p><br />
+						<p>header&nbsp;&mdash;&nbsp;footer&nbsp;&mdash;&nbsp;sidebar&nbsp;&mdash;&nbsp;content</p><br />		 
+         <p class="left-align">Give each new div an id with the name that corresponds to its part.</p>
+				 <p class="fragment green left-align" style="font-size: 90%"><em>hint: sidebars are a good place for lists.</em></p>
+				 <p class="fragment green left-align" style="font-size: 90%"><em>hint: for a footer, add a "copyright" with your name and the year to the bottom of your page.</em></p>				 
         </section> 
-         <section>
-        	<h3>Review</h3>
-        <p class = "left-align fragment">Selectors: Pseudo selectors and Compound selectors</p>
-        <p class = "left-align fragment">Styling Colors and Fonts</p>
-        <p class = "left-align fragment">Attaching CSS: Inline, Embedded and Linked</p>
-        </section>
-         <section>
-        	<h3>Review continued</h3>
-        <p class = "left-align fragment">Parts of a webpage: header, footer, sidebar and main content</p>
-        <p class = "left-align fragment">The &lt;div> element</p>
-        <p class = "left-align fragment">The box model</p>
-        </section>	       
         <!-- Box model-->
         <section>
           <h3>Box Model</h3>
           <img src ="images/box-model.png"/>
         </section>
 		<section>
-       	<h3>Padding, Borders, and Margins</h3>
-        </section>	             
-        <!-- Padding -->
-        <section>
-          <h3>Padding</h3>
-          <p>Space between the border and the content</p>
-          <img src ="images/box-model.png"/>
-        </section>
-        <section>
-          <h3>Padding</h3>
-          <p>Space between the border and the content</p>
-          <p>Adds to the total width of the box.</p>
+          <h4 class="left-align">Padding:</h4>
+          <p class="left-align">The space between the border and the content</p>
+          <p class="left-align">Makes the box "wider" (adds to the total width.)</p>
           <img src ="images/box-model-padding.png"/>
         </section>
 		<section>
           <h3>Padding</h3>
-					<p>To make the padding on all sides the same, use the "padding" property and one value</p>
-<pre><code class ="html">
+					<p class="left-align">To make the padding on all sides the same, use the "padding" property and one value</p>
+<p class="left-align green">
 padding: 15px;
-</code></pre>
-     <p>Or you can style the sides individually</p>
-<pre><code class ="html">
-padding-top: 10px;
-padding-bottom: 20px;
-padding-left: 25px;
+</p><br />
+     <p class="left-align">Or you can style the sides individually</p>
+<p class="left-align green">
+padding-top: 10px;<br />
+padding-bottom: 20px;<br />
+padding-left: 25px;<br />
 padding-right: 8px;
-</code></pre>
+</p>
 </section>
 <section>
           <h3>Padding shorthand</h3>
-<p>You can also use shorthand to style the sides in one declaration</p>
-<pre><code class ="html">
+     <p class="left-align">You can also use shorthand to style the sides in one declaration</p>
+<p class="left-align green">
 padding: 10px 5px 3px 5px;
-</code></pre>  
-<p> is the same as: </p>
-<pre><code class ="html">
-padding-top: 10px;
-padding-right: 5px;
-padding-bottom: 3px;
+</p><br />  
+<p class="left-align"> is the same as: </p>
+<p class="left-align green">
+padding-top: 10px;<br />
+padding-right: 5px;<br />
+padding-bottom: 3px;<br />
 padding-left: 5px;
-</code></pre>  
-<p>The order is: top right bottom left</p>
+</p> <br /> 
+<p class="left-align">The order is: top right bottom left</p>
         </section>
        
         <section>
           <h3>Padding Shorthand</h3>
-          <p>If the top and bottom padding are the same, and the left and right are the same, you can use two values:<p>
-<pre><code class ="html">
+     <p class="left-align">If the top and bottom padding are the same, and the left and right are the same, you can use two values:</p>
+<p class="left-align green">
 padding: 30px 50px;
-</code></pre>  
-<p> is the same as: </p>
-<pre><code class ="html">
-padding-top: 30px;
-padding-right: 50px;
-padding-bottom: 30px;
+</p><br />  
+<p class="left-align"> is the same as: </p>
+<p class="left-align green">
+padding-top: 30px;<br />
+padding-right: 50px;<br />
+padding-bottom: 30px;<br />
 padding-left: 50px;
-</code></pre>  
-<p>The order is:  top/bottom right/left</p>
+</p> <br /> 
+<p class="left-align">The order is:  top/bottom right/left</p>
         </section>
        
         <!-- Border-->
         <section>
-          <h3>Border</h3>
-          <p>The edge around the box, specified as "thickness, style, color."</p>
+          <h4 class="left-align">Border:</h4>
+          <p class="left-align">Between padding and margin.</p>
+          <p class="left-align">border-width&nbsp;&mdash;&nbsp;border-style&nbsp;&mdash;&nbsp;border-color</p>					
           <img src ="images/box-model-border.png">
         </section>
         <section>
@@ -239,32 +222,34 @@ padding-left: 50px;
 					<li>border-color</li>
 					</ul>
 					<p class="left-align">Example: </p>
-<pre><code class ="html">
-  border-width: 10px;
-  border-style: dashed;
-  border-color: #666666;
-</code></pre>
+<p class="left-align green">
+  border-width: 10px;<br />
+  border-style: dashed;<br />
+  border-color: #666666;<br />
+</p>
 </section>
         <section>
           <h3>Border style shorthand</h3>
-          <p>You can specify each property separately, or all three together.</p>
-          <p>A solid red border</p>
-<pre><code class = "html">
-  border: 1px solid #ff0000;
-</code></pre>					
+          <p class="left-align">You can specify each property separately, or all three together.</p><br />
+					<h4 class="left-align">Example:</h4>					
+          <p class="left-align">A solid red border:</p>
+<p class="green left-align">
+  &nbsp;&nbsp;  border: 1px solid #ff0000;
+</p>					
         </section>        
         <section>
           <h3>Border style shorthand</h3>
-          <p>You can specify separate styles for the top, left, right or bottom border</p>
-          <p>A thick dotted black top border</p>
-<pre><code class ="html">
-  border-top: 4px dotted #000000;
-</code></pre>
-          <p>Two different border styles</p>
-<pre><code class ="html">
-  border-top: 1px solid #ff0000;
-  border-bottom: 4px dotted #000000;
-</code></pre>
+          <p class="left-align">You can specify separate styles for the top, left, right or bottom border</p><br />
+					<h4 class="left-align">Examples:</h4>
+          <p class="left-align">A thick dotted black top border:</p>
+<p class="green left-align">
+&nbsp;&nbsp;  border-top: 4px dotted #000000;
+</p><br />
+          <p class="left-align">Two different border styles:</p>
+<p class="green left-align">
+&nbsp;&nbsp;  border-top: 1px solid #ff0000;<br />
+&nbsp;&nbsp;  border-bottom: 4px dotted #000000;
+</p>
         </section>
        
 
@@ -278,59 +263,62 @@ padding-left: 50px;
         
         <section>
           <h3>Margins</h3>
-					<p>Styled just like padding!</p>
-<pre><code class ="html">
+					<p class="left-align">Styled just like padding!</p>
+<p class="left-align green">
 margin: 15px;
-</code></pre>
-     <p>Or you can style the sides individually</p>
-<pre><code class ="html">
-margin-top: 10px;
-</code></pre>	
+</p><br />
+     <p class="left-align">Or you can style the sides individually</p>
+<p class="left-align green">
+margin-top: 10px;<br />
+margin-bottom: 20px;<br />
+margin-left: 25px;<br />
+margin-right: 8px;
+</p>
 </section>	
 <section>		
           <h3>Margin shorthand</h3>
-<p>Same as padding!</p>
-<pre><code class ="html">
+     <p class="left-align">Same as padding!</p>
+<p class="left-align green">
 margin: 10px 5px 3px 5px;
-</code></pre>  
-<p> is the same as: </p>
-<pre><code class ="html">
-margin-top: 10px;
-margin-right: 5px;
-margin-bottom: 3px;
+</p><br />  
+<p class="left-align"> is the same as: </p>
+<p class="left-align green">
+margin-top: 10px;<br />
+margin-right: 5px;<br />
+margin-bottom: 3px;<br />
 margin-left: 5px;
-</code></pre>  
-<p>The order is: top right bottom left</p>
+</p> <br /> 
+<p class="left-align">The order is: top right bottom left</p>
  </section>
 <section>
          <h3>Margin Shorthand</h3>
-          <p>Like padding, if the top and bottom margin are the same, and the left and right are the same, you can use two values:<p>
-<pre><code class ="html">
+     <p class="left-align">Like padding, if the top and bottom margin are the same, and the left and right are the same, you can use two values:</p>
+<p class="left-align green">
 margin: 30px 50px;
-</code></pre>  
-<p> is the same as: </p>
-<pre><code class ="html">
-margin-top: 30px;
-margin-right: 50px;
-margin-bottom: 30px;
+</p><br />  
+<p class="left-align"> is the same as: </p>
+<p class="left-align green">
+margin-top: 30px;<br />
+margin-right: 50px;<br />
+margin-bottom: 30px;<br />
 margin-left: 50px;
-</code></pre>  
-<p>The order is:  top/bottom right/left</p> 
+</p> <br /> 
+<p class="left-align">The order is:  top/bottom right/left</p>
 </section>
         <section>
           <h3>Auto Margin</h3>
-          <p>If a margin is set to auto on a box that has width, it will take up as much space as possible.</p>
-          <p>CENTERED</p>
-<pre><code class ="html">
-  margin: auto;
+     <p class="left-align">If a margin is set to auto on a box that has width, it will take up as much space as possible.</p><br />  
+          <p>This will "center" the box:</p>
+<p class="left-align green">
+  margin: auto;<br /> 
+  width: 300px;<br /> 
+</p><br /> 
+          <p>This will put the box on the right:</p>
+<p class="left-align green">
+  margin-left: auto;<br /> 
+  margin-right: 5px;<br /> 
   width: 300px;
-</code></pre>
-          <p>FLUSH-RIGHT</p>
-<pre><code class = "html">
-  margin-left: auto;
-  margin-right: 5px;
-  width: 300px;
-</code></pre>
+</p>
         </section>
 		<section>
 			<h3>Width and height</h3>
